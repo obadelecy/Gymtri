@@ -1,0 +1,273 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #222020; 
+    color: #fff; 
+}
+
+
+header {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 2em 2em;
+    width: 100%;
+    position: relative;
+    z-index: 10;
+}
+
+header img {
+    margin-right: 2em;
+}
+
+/* Barra da Navegação */
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 2em;
+}
+
+header img {
+    width: 110px;
+}
+
+nav {
+    font-family: "Montserrat", sans-serif;
+    width: 100%;
+    padding: 1em 0;
+    margin-right: 15px;
+}
+
+.navConfig {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+    color: #FFC83D;
+    transition: 0.3s;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    list-style-type: none;
+    margin-right: 5em;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #FFC83D;
+    padding: 1.4em 2em;
+    display: flex;
+    font-size: 20px;
+    text-align: center;
+}
+
+nav ul li a:hover {
+    color: white;
+    font-size: 17px;
+    transition: 0.3s;
+}
+
+/* Estilo do Submenu */
+.subMenu {
+    display: none;
+    position: absolute;
+    background-color: #252423;
+    border: 1px solid #FFC83D;
+    min-width: 120px;
+    width: 100%;
+    top: 100%;
+    left: 0;
+}
+
+nav ul li:hover .subMenu {
+    display: block;
+}
+
+.subMenu li {
+    float: none;
+}
+
+.subMenu a {
+    padding: 1.3em 0.8em;
+    text-align: center;
+    font-size: 16px;
+}
+
+.hrMenu {
+    border-color: #FFC83D;
+}
+
+
+.navConfig {
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    color: #FFC83D;
+    transition: 0.3s;
+}
+
+.navConfig:hover {
+    color: white;
+    transition: 0.3s;
+    font-size: 22px;
+}
+
+/* Estilo da grade de produtos */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Estilo de cada produto */
+.product {
+    background-color: #fff; /* Fundo branco para os produtos */
+    border: 1px solid #ddd; /* Borda suave */
+    border-radius: 8px;
+    text-align: center;
+    padding: 15px;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Efeito de aumento na imagem do produto */
+.product img {
+    width: 100px; 
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out; 
+}
+
+/* Texto dentro do produto */
+.product h3, h5 {
+    margin: 10px 0;
+    color: #161515; 
+}
+
+/* Botão de compra */
+.buy-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ffc83d; 
+    color: #222020; 
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1em;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.buy-button:hover {
+    background-color: #e6b036; 
+}
+
+/* Carrossel */
+.carousel {
+    position: relative;
+    width: 100%;
+    max-width: auto; 
+    margin: 20px auto;
+    overflow: hidden;
+}
+
+/* Imagem do carrossel */
+.carousel-image {
+    width: 100%;
+    display: none; /* Oculta as imagens inicialmente */
+}
+
+/* Imagem ativa no carrossel */
+.carousel-image.active {
+    display: block; 
+}
+
+/* Botões de navegação do carrossel */
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo semitransparente */
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+/* Botão anterior */
+.carousel-button.prev {
+    left: 10px;
+}
+
+/* Botão próximo */
+.carousel-button.next {
+    right: 10px;
+}
+
+/* Efeito de hover nos botões de navegação do carrossel */
+.carousel-button:hover {
+    background-color: rgba(0, 0, 0, 0.8); 
+}
+
+/* Link que envolve a imagem */
+.carousel-link {
+    display: block; 
+    width: 100%;
+}
+
+/* Animação de pulsação nos produtos */
+.product.pulse {
+    animation: pulse-animation 0.8s infinite; 
+}
+
+@keyframes pulse-animation {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05); 
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Efeito de aumento nas imagens dos produtos */
+.product img:hover {
+    transform: scale(1.2); 
+}
+
+/* Efeito de suavização nos produtos */
+.product:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); 
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+}
+
+@media (max-width: 480px) {
+    .product-grid {
+        grid-template-columns: 1fr; 
+    }
+}

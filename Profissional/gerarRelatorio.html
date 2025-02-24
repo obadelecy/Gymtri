@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerar relatório</title>
+    <link rel="stylesheet" href="/styleInterface.css">
+</head>
+<body>
+    <header>
+        <a href="interfaceProfissional.html"><img src="/img/logoPng.png" alt="Logo Gymtri" width="110px"></a>
+        <nav id="menu">
+            <ul>
+                <li><a href="buscarAluno.html" class="navConfig">BUSCAR ALUNO</a></li>
+                <li><a href="atividadeCriada.html" class="navConfig">ATIVIDADES</a></li>
+                <li><a href="relatorioCriado.html" class="navConfig">RELATÓRIOS</a></li>
+                <li><a href="editarDados.html" class="navConfig">EDITAR DADOS</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="title">
+            <h1>Gerar relatório</h1>
+        </section>
+
+        <form>
+            <section>
+                <label class="labelAgend" for="area">Especialidade</label>
+                <select name="area" id="area">
+                    <option id="null1" value="null">Selecione a especialidade</option>
+                    <option value="Nutricionista">Nutricionista</option>
+                    <option value="Personal Trainer">Personal Trainer</option>
+                </select>
+                <label class="labelAgend" for="name">Nome completo</label>
+                <input type="text" name="name" id="name" placeholder="Digite seu nome ex: DR...">
+            </section>
+            <section>
+                <label class="labelAgend" for="cpfAluno">CPF do aluno </label>
+                <input type="text" name="cpfAluno" id="cpfAluno">
+            </section>
+            <section>
+                <label class="labelAgend" for="treino">Relate a consulta:</label>
+                <input type="text" name="treino" id="treino">
+            </section>
+            <section>
+                <label class="labelAgend" for="date">Data</label>
+                <input type="date" name="date" id="date">
+            </section>
+            <section>
+                <label class="labelAgend" for="hours">Horário</label>
+                <input type="time" name="" id="">
+            </section>
+            <section class="btnAgend">
+                <button class="btnConfig">Finalizar relatório</button>
+            </section>
+        </form>
+    </main>
+  
+</body>
+</html>

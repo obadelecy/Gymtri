@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gymtri - Sua academia online</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="scripts.js" defer></script>
+</head>
+
+<body>
+
+    <!--Cabeçalho do site-->
+    <header>
+        <a href="index.html"><img src="img/logoPng.png" alt="Logo Gymtri" width="75px"></a>
+
+        <!--Menu de navegação-->
+        <nav id="menu">
+
+            <!--Itens do Menu-->
+            <ul>
+                <li> <a href="/Produtos/indexprodutos.html" class="navConfig" target="_blank">Produtos</a></li>
+                <li><a href="#plansValueContainer" class="navConfig">Planos</a></li>
+                <li><a href="#blockAdvantage" class="navConfig">Vantagens</a></li>
+                <li><a href="index.html#mapContainer" class="navConfig">Academias</a></li>
+
+                <!--Itens menu oculto-->
+                <li>
+                    <a class="navConfig" href="#">Login &#x25BE </a>
+                    <ul class="subMenu">
+                        <li><a href="Aluno/login.html" class="navConfig" target="_blank">Aluno</a></li>
+                        <hr class="hrMenu">
+                        <li><a href="Academia/loginAcademia.html" class="navConfig" target="_blank">Academia</a></li>
+                        <hr class="hrMenu">
+                        <li><a href="Profissional/loginProfissional.html" class="navConfig"
+                                target="_blank">Profissional</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--Conteúdo Principal-->
+    <main>
+
+        <!--Texto principal-->
+        <section id="presentation">
+            <section id="text1">
+                <h2>Sua conexão digital para um estilo de vida fitness completo.</h2>
+            </section>
+
+            <section id="imgPresentation">
+                <img src="img/imgHome2.jpg" alt="Saúde e bem estar">
+            </section>
+        </section>
+
+        <!--Serviços oferecidos-->
+        <section id="offer">
+            <section id="offerGrid">
+                <section class="imgItem">
+                    <img src="img/academia.jpg" alt="Halter">
+                </section>
+                <section class="textItem">
+                    <h3>Academia</h3>
+                    <p>Aqui na Gymtri, você encontra a academia mais próxima de você!</p>
+                </section>
+
+                <section class="textItem">
+                    <h3>Personal Trainer</h3>
+                    <p>Contamos com serviço de personal trainer online, permitindo que você tenha um treino eficiente e
+                        adaptado às suas necessidades.</p>
+                </section>
+                <section class="imgItem">
+                    <img src="img/personalTrainer.jpg" alt="Personal Trainer">
+                </section>
+
+
+                <section class="imgItem">
+                    <img src="img/alimentos4.jpg" alt="Nutricionista">
+                </section>
+                <section class="textItem">
+                    <h3>Nutricionistas</h3>
+                    <p>Oferecemos consultas com nutricionistas, proporcionando orientação personalizada para você
+                        atingir seus objetivos e bem-estar.</p>
+                </section>
+
+            </section>
+        </section>
+
+        <!--Valores dos planos-->
+
+        <section id="plansValueContainer" class="titleContainer">
+            <h1>Melhores planos para você!</h1>
+            <section id="blockValue">
+                <section class="valueContainer">
+                    <h4 id="free">Gratuito</h4>
+                    <span class="valuePlans">R$00,00</span>
+                    <p>por mês</p>
+                    <ul class="textPlans">
+                        <li>Acesso à plataforma</li>
+                        <li>Sem custos iniciais</li>
+                        <li>Ideal para projetos iniciais</li>
+                        <li>Facilidade para upgrade para planos pagos</li>
+                    </ul>
+                </section>
+                <section class="valueContainer">
+                    <h4>Básico</h4>
+                    <span class="valuePlans">R$94,99</span>
+                    <p>por mês</p>
+                    <ul class="textPlans">
+                        <li>Acesso completo às academias do site</li>
+                        <li>Treine nas academias disponíveis </li>
+                        <li>Escolha entre academias cadastradas</li>
+                        <li>Facilidade para upgrade para planos pagos</li>
+                    </ul>
+
+
+                </section>
+                <section class="valueContainer">
+                    <h4>Intermediário</h4>
+                    <span class="valuePlans">R$249,99</span>
+                    <p>por mês</p>
+                    <ul class="textPlans">
+                        <li>Acesso ilimitado às academias</li>
+                        <li>2 consultas mensais com especialista</li>
+                        <li>Flexibilidade de escolher entre nutricionista ou personal</li>
+                        <li>Acompanhamento personalizado</li>
+                    </ul>
+                </section>
+                <section class="valueContainer">
+                    <h4>Premium</h4>
+                    <span class="valuePlans">R$359,99</span>
+                    <p>por mês</p>
+                    <ul class="textPlans">
+                        <li>Acesso ilimitado às academias</li>
+                        <li>4 consultas mensais com especialista</li>
+                        <li>Flexibilidade de escolher entre nutricionista ou personal</li>
+                        <li>Acompanhamento personalizado</li>
+                    </ul>
+                </section>
+            </section>
+            <!--Botão para contratar um dos planos-->
+            <section id="btnPlans">
+                <button>Garantir agora!</button>
+            </section>
+        </section>
+
+        <!--Vantagens que a Gymtri oferece-->
+        <section id="blockAdvantage" class="titleContainer">
+            <h1>Vantagens</h1>
+            <section id="blockImg">
+                <img src="/img/stopwatch2.png" alt="Tempo">
+                <img src="img/piggy-bank2.png" alt="Economia">
+                <img src="img/checked2.png" alt="Qualidade">
+            </section>
+
+            <section id="descripBlock">
+                <section id="blockAdv1" class="blockAdv">
+                    <h4 class="titleAdv">Não perca horas em filas</h4>
+                    <p>Sem filas, aproveite seu tempo com praticidade e eficiência.</p>
+                </section>
+                <section id="blockAdv2" class="blockAdv">
+                    <h4 class="titleAdv">Mais economia para você</h4>
+                    <p>Economia garantida, mantendo seu orçamento sob controle.</p>
+                </section>
+                <section id="blockAdv3" class="blockAdv">
+                    <h4 class="titleAdv">Profissionais certificados e qualificados</h4>
+                    <p>Atendimento especializado por profissionais confiáveis e experientes.</p>
+                </section>
+            </section>
+        </section>
+
+        <!--Objetivo da Gymtri-->
+        <section id="gymtriInfo">
+            <section id="infoBlock" class="titleContainer">
+                <h1>Sobre a Gymtri</h1>
+                <p>Viemos com o objetivo de facilitar sua conexão com a vida fitness, trazendo uma plataforma que lhe
+                    dará o conforto e diversos benefícios que você precisa para mehorar sua qualidade de vida!</p>
+            </section>
+        </section>
+
+        <!--Busque pela academia mais próxima-->
+        <section id="mapContainer" class="titleContainer">
+            <h1>Pesquise pela academia mais perto de você</h1>
+            <section id="searchCEP">
+                <input type="number" name="cep" id="cep" placeholder="Digite seu CEP">
+                <input type="submit" name="pesquisar" id="pesquisar" value="Procurar">
+            </section>
+
+            <section id="blockMap">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.527924059888!2d-46.784449225489624!3d-23.513507359834318!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cefef9f93b3e67%3A0x98f6289e77ae0d95!2sAcademia%20Spartacus!5e0!3m2!1spt-BR!2sbr!4v1725930795850!5m2!1spt-BR!2sbr"
+                    width="600" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </section>
+        </section>
+    </main>
+
+    <!--Rodapé do Site-->
+    <footer>
+
+        <!--Imagem centralizada do rodapé-->
+        <section id="footerImg">
+            <img src="img/logoPng.png" alt="">
+        </section>
+
+        <hr>
+
+        <!--Links e informativos-->
+        <section id="footerInfos">
+            <section class="blockFooter">
+                <h3>Institucional</h3>
+                <ul>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#">Vantagens</a></li>
+                    <li><a href="#">Fale Conosco</a></li>
+                    <li><a href="#">Central de ajuda</a></li>
+                </ul>
+            </section>
+
+            <section class="blockFooter">
+                <h3>Saiba Mais</h3>
+                <ul>
+                    <li><a href="#">Trabalhe Conosco</a></li>
+                    <li><a href="#">Canal de Denúncias</a></li>
+                    <li><a href="#">Divulgue Sua Marca</a></li>
+                </ul>
+            </section>
+
+            <section class="blockFooter">
+                <h3>Entre em contato</h3>
+                <ul>
+                    <li><img src="img/instagram (1).png" alt="Instagram"><a href="#">@gymtri</a></li>
+                    <li><img src="img/tik-tok.png" alt="Tiktok"><a href="#">@gymtri</a></li>
+                    <li><img src="img/o-email.png" alt="Email"><a href="#">gymtricontato@gmail.com</a></li>
+                    <li><img src="img/telefone.png" alt="Telefone"><a href="#">(11)99999-9999</a></li>
+                </ul>
+            </section>
+
+        </section>
+    </footer>
+</body>
+
+</html>

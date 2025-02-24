@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Aluno</title>
+    <link rel="stylesheet" href="/styleLogin.css">
+</head>
+<body>
+    <header>
+        <a href="/index.html"><img src="/img/logoPng.png" alt="Logo Gymtri" width="110px"></a>
+        <nav id="menu">
+            <ul>
+                <li> <a href="/Produtos/indexprodutos.html" class="navConfig" target="_blank">PRODUTOS</a></li>
+                <li><a href="/index.html#plansValueContainer" class="navConfig">PLANOS</a></li>
+                <li><a href="/index.html#blockAdvantage" class="navConfig">VANTAGENS</a></li>
+                <li><a href="/index.html#mapContainer" class="navConfig">ACADEMIAS</a></li>
+                <li>
+                    <a class="navConfig" href="#">LOGIN &#x25BE </a>
+                    <ul class="subMenu">
+                        <li><a href="/Aluno/login.html" target="_blank">ALUNO</a></li>
+                        <hr class="hrMenu">
+                        <li><a href="/Academia/loginAcademia.html" target="_blank">ACADEMIA</a></li>
+                        <hr class="hrMenu">
+                        <li><a href="/Profissional/loginProfissional.html" target="_blank">PROFISSIONAL</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="title" class="h1Title">
+            <h1>CADASTRO - ALUNO</h1>
+        </section>
+        <hr>
+        <form>
+            <section id="fullnameInput">
+                <label for="fullname" class="titleLabel">Nome completo</label>
+                <br>
+                <input id="fu" type="email" placeholder="Digite seu nome completo">
+            </section>
+
+            <br>
+
+            <section id="emailRegisterInput">
+                <label for="emailRegister" class="titleLabel">E-mail</label>
+                <br>
+                <input id="emailRegister" type="email" placeholder="Digite seu e-mail">
+            </section>
+
+            <br>
+            <section id="passwordInput">
+                <label for="passwordRegister" class="titleLabel">Senha</label>
+                <input type="password" name="passwordRegister" id="passwordRegister" placeholder="Insira sua senha">
+            </section>
+
+            <br>
+
+            <section id="passwordConfirmInput">
+                <label for="passwordRegisterConfirm" class="titleLabel">Confirmar senha</label>
+                <input type="password" name="passwordRegisterConfirm" id="passwordRegisterConfirm" placeholder="Confirme sua senha">
+            </section>
+
+            <br>
+
+            <section id="numberAndCpf">
+                <section>
+                    <label for="numberRegister" class="titleLabel">Celular</label>
+                    <input type="text" name="numberRegister" id="numberRegister" placeholder="Ex: 11940028922" maxlength="11">
+                </section>
+                <section>
+                    <label for="cpfRegister" class="titleLabel">CPF</label>
+                    <input type="text" name="cpfRegister" id="cpfRegister" placeholder="Digite seu CPF" maxlength="11">
+                </section> 
+                
+            </section>
+
+            <br>
+
+            <section>
+                <label class="titleLabel" for="plan">Esolha o plano:</label>
+                <select name="plans" id="choicePlans">
+                    <option id="null2" value="null">Escolha o plano</option>
+                    <option value="Gratuito"> Gratuito</option>
+                    <option value="Básico">Básico</option>
+                    <option value="Intermediário">Intermediário</option>
+                    <option value="Pro">Pro</option>
+                </select>
+            </section>
+
+            <section id="card" class="h1Title">
+                <h1>DADOS DO CARTÃO</h1>
+            </section>
+
+            <hr>
+
+            <section id="numberCard">
+                <label for="numberCardRegister" class="titleLabel">Número do cartão</label>
+                <input type="text" name="numberCardRegister" id="numberCardRegister" placeholder="Insira o número do cartão (Sem ' . ')">
+            </section>
+
+            <br>
+
+            <section id="nameCard">
+                <label for="nameCardRegister" class="titleLabel">Nome impresso no cartão</label>
+                <input type="text" name="nameCardRegister" id="nameCardRegister" placeholder="Digite como está impresso no cartão">
+            </section>
+
+            <br>
+
+            <section id="codeValidation">
+                <section>
+                    <label for="validityDate" class="titleLabel">Validade</label>
+                    <input type="text" name="validityDate" id="validityDate" placeholder="Ex: 02/29" maxlength="5">
+                </section>
+                <section>
+                    <label for="cvvValidation" class="titleLabel">CPF</label>
+                    <input type="text" name="cvvValidation" id="cvvValidation" placeholder="3 digitos no verso" maxlength="3">
+                </section> 
+            </section>
+
+            <section id="buttonInput">
+                <button type="button" id="confirmRegister">Confirmar Cadastro</button>
+            </section>
+
+            <section id="textLogin">
+                <a href="login.html">Já possuo uma conta</a>
+            </section>
+            
+        </form>
+    </main>
+</body>
+</html>
