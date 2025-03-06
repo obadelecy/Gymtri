@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Aluno</title>
+    <link rel="stylesheet" href="/styleLogin.css">
+</head>
+<body>
+    <header>
+        <a href="/index.html"><img src="/img/logoPng2.png" alt="Logo Gymtri" width="75px"></a>
+        <nav id="menu">
+            <ul>
+                <li> <a href="/Produtos/indexprodutos.html" class="navConfig" target="_blank">Produtos</a></li>
+                <li><a href="/index.html#plansValueContainer" class="navConfig">Planos</a></li>
+                <li><a href="/index.html#blockAdvantage" class="navConfig">Vantagens</a></li>
+                <li><a href="/index.html#mapContainer" class="navConfig">Academias</a></li>
+                <li><a href="login.html" class="navConfig">Login</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="title" class="h1Title">
+            <h1>Login</h1>
+        </section>
+        <hr>
+
+        <form>
+            <section id="chooseUser">
+                <button class="btnChoose" data-user="interfaceUsuario" type="button">Aluno</button>
+                <button class="btnChoose" data-user="interfaceAcademia" type="button">Academia</button>
+                <button class="btnChoose" data-user="interfaceProfissional" type="button">Profissional</button>
+            </section>
+
+            <input type="hidden" id="userType">
+            
+            <section id="emailInput">
+                <label for="email" class="titleLabel">E-mail</label>
+                <br>
+                <input id="email" type="email" placeholder="Digite seu e-mail">
+            </section>
+
+            <br>
+
+            <section id="containerPassword">
+                <label for="password" class="titleLabel">Senha</label>
+                <br>
+                <input id="password" type="password" placeholder="Digite sua senha">
+            </section>
+
+            <section id="textRegister">
+                <a href="esqueciSenha.html">Esqueci minha senha</a>
+                <a href="cadastro.html">Fazer Cadastro</a>
+            </section>
+
+            <br>
+            
+            <section id="buttonInput">
+                <button type="submit" id="btnConfirm">Continuar</button>
+            </section>
+        </form>
+    </main>
+    
+
+    <script src="/index.js"></script>
+
+</body>
+</html>

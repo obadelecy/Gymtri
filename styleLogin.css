@@ -1,9 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Playwrite+NO:wght@100..400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Contrail+One&display=swap');
+
 * {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
 }
 
 header {
@@ -11,32 +14,36 @@ header {
     align-items: center;
     flex-direction: row;
     justify-content: space-between;
-    margin: 0 2em 2em;
     width: 100%;
     position: relative;
     z-index: 10;
+    background-color: #00BFAE;
 }
 
 header a img {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
     margin-right: 2em;
-    margin-top: -9em;
 }
 
 nav {
-    font-family: "Montserrat", sans-serif;
     width: 100%;
-    padding: 1em 0 12em 0;
+    padding: 0.2em 0;
     margin-right: 15px;
-    overflow: hidden;
 }
+
 .navConfig{
     text-decoration: none;
     font-size: 20px;
     font-weight: 500;
-    color: #FFC83D;
+    letter-spacing: 1px;
+    color: #ffffff;
+    transition: 0.3s;
+    text-align: center;
+    display: flex;
+    padding: 1.4em 2em;
+}
+
+.navConfig:hover{
+    color: #607D8B;
     transition: 0.3s;
 }
 
@@ -50,66 +57,14 @@ nav ul {
     margin-right: 5em;
 }
 
-nav ul li {
-    position: relative;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: #FFC83D;
-    padding: 1.4em 2em;
-    display: flex;
-    font-size: 20px;
-    text-align: center;
-}
-
-nav ul li a:hover{
-    color: white;
-    font-size: 17px;
-    transition: 0.3s;
-}
-
-.subMenu{
-    display: none;
-    position: absolute;
-    background-color: #252423;
-    border: 1px solid #FFC83D;
-    min-width: 120px;
-    width: 100%;
-    top: 100%;
-    left: 0;
-}
-
-nav ul li:hover .subMenu{
-    display: block;
-}
-
-.subMenu li{
-    float: none;
-}
-
-.subMenu a {
-    padding: 1.3em 0.8em;
-    text-align: center;
-    font-size: 16px;
-    
-}
-
-.navConfig:hover {
-    color: white;
-    transition: 0.3s;
-    font-size: 22px;
-}
-
 body {
-    background-color: #252423;
+    background-color: #E0E0E0;
     overflow-x: hidden;
 }
 
 main{
-    margin: -4em 20em;
+    margin: 4em 20em;
     position: relative; /*Alteração*/
-    font-family: "Montserrat", sans-serif;
 }
 
 #title {
@@ -120,7 +75,7 @@ main{
 }
 
 .h1Title {
-    color: #FFC83D;
+    color: #00BFAE;
     font-size: 1.2em;
     font-weight: normal;
     padding: 0.2em;
@@ -128,7 +83,7 @@ main{
 }
 
 hr {
-    border-color: #FFC83D;
+    border-color: #00BFAE;
     margin-bottom: 1em;
 }
 
@@ -141,25 +96,46 @@ form {
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-around;
+}
 
+#chooseUser{
+    margin: 1em auto;
+}
+
+.btnChoose{
+    background-color: #00BFAE;
+    color: #ffffff;
+    padding: 0.5em 2em;
+    border: 1px solid #607D8B;
+    border-radius: 1em;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.btnChoose:hover{
+    background-color: #607D8B;
+    color: #ffffff;
+}
+
+.btnChoose.selected{
+    background-color: #607D8B;
 }
 
 .titleLabel {
-    color: #FFC83D;
+    color: #00BFAE;
     font-size: 1.6em;
     transition: 0.3s;
 }
 
 input{
-    background-color: #252423;
-    border: 1px solid #FFC83D;
+    background-color: #ffffff;
+    border: 1px solid #607D8B;
     border-radius: 1.2em;
     padding: 1em;
     margin: 1em 0;
     width: 100%;
-    color: white;
+    color: #607D8B;
     transition: 0.3s;
-    font-family: "Montserrat", sans-serif;
 }
 
 #textRegister{
@@ -170,11 +146,11 @@ input{
 }
 
 #textRegister a{
-    color: #FFC83D;
+    color: #00BFAE;
 }
 
 #textRegister a:hover{
-    color: white;
+    color: #607D8B;
 }
 
 #buttonInput{
@@ -184,19 +160,18 @@ input{
 }
 
 #buttonInput button{
-    background-color: #252423;
-    color: #FFC83D;
+    background-color: #00BFAE;
+    color: #ffffff;
     padding: 0.5em 2em;
-    border: 1px solid #FFC83D;
+    border: 1px solid #607D8B;
     border-radius: 1em;
     font-size: 1.4em;
     cursor: pointer;
 }
 
 #buttonInput button:hover{
-    background-color: #FFC83D;
-    color: #252423;
-    transition: 0.3s;
+    background-color: #607D8B;
+    color: #ffffff;
 }
 
 #numberAndCpf{
@@ -230,25 +205,31 @@ input{
 }
 
 #textLogin a {
-    color: #FFC83D;
+    color: #00BFAE;
 }
 
 #textLogin a:hover {
-    color: white;
-    transition: 0.3s;
+    color: #607D8B;
 }
 
 select {
-    background-color: #252423;
-    border: 1px solid #FFC83D;
+    background-color: #ffffff;
+    border: 1px solid #607D8B;
     border-radius: 1.2em;
     padding: 1em;
     margin: 1em 0;
     width: 100%;
-    color: white;
+    color: #00BFAE;
     transition: 0.3s;
-    font-family: "Montserrat", sans-serif;
     font-size: 1em;
+}
+
+#chooseUserRegister {
+    margin: 2em 8.2em;
+}
+
+#registerAluno, #registerAcademia, #registerProfissional {
+    display: none;
 }
 
 

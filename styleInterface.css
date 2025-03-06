@@ -1,9 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Playwrite+NO:wght@100..400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Contrail+One&display=swap');
+
 * {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
 }
 
 header {
@@ -11,31 +14,37 @@ header {
     align-items: center;
     flex-direction: row;
     justify-content: space-between;
-    margin: 0 2em 2em 2em;
     width: 100%;
     position: relative;
     z-index: 10;
+    background-color: #00BFAE;
+    margin-bottom: 2em;
 }
 
 header a img {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
     margin-right: 2em;
 }
 
 nav {
-    font-family: "Montserrat", sans-serif;
     width: 100%;
-    padding: 1em 0 0em 0;
+    padding: 0.2em 0;
     margin-right: 15px;
-    overflow: hidden;
 }
+
 .navConfig{
     text-decoration: none;
     font-size: 20px;
     font-weight: 500;
-    color: #FFC83D;
+    letter-spacing: 1px;
+    color: #ffffff;
+    transition: 0.3s;
+    text-align: center;
+    display: flex;
+    padding: 1.4em 2em;
+}
+
+.navConfig:hover {
+    color: #607D8B;
     transition: 0.3s;
 }
 
@@ -53,29 +62,8 @@ nav ul li {
     position: relative;
 }
 
-nav ul li a {
-    text-decoration: none;
-    color: #FFC83D;
-    padding: 1.4em 2em;
-    display: flex;
-    font-size: 20px;
-    text-align: center;
-}
-
-nav ul li a:hover{
-    color: white;
-    font-size: 17px;
-    transition: 0.3s;
-}
-
-.navConfig:hover {
-    color: white;
-    transition: 0.3s;
-    font-size: 22px;
-}
-
 body {
-    background-color: #252423;
+    background-color: #E0E0E0;
     overflow-x: hidden;
 }
 
@@ -108,53 +96,51 @@ main {
     width: 30%;
     height: auto;
     margin: 2em auto;
-    border: 1px solid #FFC83D;
+    border: 2px solid #00BFAE;
     border-radius: 8%;
     padding: 2em;
     transition: 0.3s;
 }
 
 .blocksInterface:hover {
-    border: 2px solid #FFC83D;
+    border: 2px solid #00BFAE;
     width: 31%;
     height: auto;
     transition: 0.3s;
     cursor: pointer;
-    box-shadow: 0px 0px 10px 1px #FFC83D;
+    box-shadow: 0px 0px 10px 1px #00BFAE;
 
 }
 
 .blocksInterface span a {
     text-decoration: none;
-    color: white;
-    font-family: "Montserrat", sans-serif;
+    color: #00BFAE;
+    font-weight: 600;
 }
 
 .title{
     text-align: center;
-    color: #FFC83D;
-    font-family: "Montserrat", sans-serif;
+    color: #00BFAE;
     margin-bottom: 3em;
 }
 
 .consult {
     margin: 4em 6em;
     height: auto;
-    border: 1px solid #FFC83D;
+    border: 1px solid #607D8B;
     border-radius: 1em;
-    font-family: "Montserrat", sans-serif;
 }
 
 .itemConsult {
     padding: 1em;
-    color: white;
-    border: 1px solid #FFC83D;
+    color: #607D8B;
+    border: 1px solid #607D8B;
     border-radius: 0.6em;
+    font-weight: 500;
 }
 
 .consult h4{
-    color: #FFC83D;
-    font-family: "Montserrat", sans-serif;
+    color: #00BFAE;
     margin-bottom: 0.5em;
 }
 
@@ -163,7 +149,8 @@ main {
 }
 
 .itemConsult span {
-    color: #FFC83D;
+    color: #00BFAE;
+    font-weight: 500;
 }
 
 .consult #item3 {
@@ -173,7 +160,7 @@ main {
 }
 
 .consult #item3 h4 {
-    color: white;
+    color: #00BFAE;
 }
 
 #btnConsult {
@@ -182,52 +169,52 @@ main {
 }
 
 .btnConfig{
-    font-family: "Montserrat", sans-serif;
     margin: 1em 1em 0 0;
-    background-color: #252423;
-    border: 1px solid #FFC83D;
+    background-color: #00BFAE;
+    border: 1px solid #607D8B;
     border-radius: 1em;
-    color: #FFC83D;
+    color: #ffffff;
     padding: 0.5em;
     font-size: 1em;
 }
 
 .btnConfig:hover{
-    color: white;
-    border: 1px solid white;
+    color: #ffffff;
+    background-color: #607D8B;
+    border: 1px solid #607D8B;
     cursor: pointer;
 }
 
 .labelAgend{
-    color: #FFC83D;
-    font-family: "Montserrat", sans-serif;
+    color: #00BFAE;
     font-size: 1.6em;
+    font-weight: 400;
 }
 
 input{
-    background-color: #252423;
-    border: 1px solid #FFC83D;
+    background-color: #ffffff;
+    border: 2px solid #00BFAE;
     border-radius: 1.2em;
     padding: 1em;
     margin: 1em 0;
     width: 100%;
-    color: white;
+    color: #607D8B;
     transition: 0.3s;
-    font-family: "Montserrat", sans-serif;
     font-size: 1em;
+    font-weight: 500;
 }
 
 select {
-    background-color: #252423;
-    border: 1px solid #FFC83D;
+    background-color: #ffffff;
+    border: 2px solid #00BFAE;
     border-radius: 1.2em;
     padding: 1em;
     margin: 1em 0;
     width: 100%;
-    color: white;
+    color: #607D8B;
     transition: 0.3s;
-    font-family: "Montserrat", sans-serif;
     font-size: 1em;
+    font-weight: 500;
 }
 
 .btnAgend{
@@ -245,25 +232,24 @@ select {
 
 #labelPending{
     margin-left: 4em;
-    color: #FFC83D;
-    font-family: "Montserrat", sans-serif;
+    color: #00BFAE;
     font-size: 1.6em;
 }
 #btnPending {
     padding: 1em;
     margin: 0 1em;
-    background-color: #252423;
-    border: 1px solid #FFC83D;
+    background-color: #00BFAE;
+    border: 2px solid #607D8B;
     border-radius: 1.2em;
     font-size: 1em;
-    font-family: "Montserrat", sans-serif;
-    color: #FFC83D;
+    color: #ffffff;
 }
 
 #btnPending:hover {
-    color: white;
+    color: #ffffff;
     transition: 0.3s;
-    border: 1px solid white;
+    background-color: #607D8B;
+    border: 2px solid #607D8B;
     cursor: pointer;
 }
 
@@ -273,26 +259,24 @@ select {
 }
 
 #h1Text{
-    color: #FFC83D;
-    font-family: "Montserrat", sans-serif;
+    color: #00BFAE;
     font-size: 1.6em;
     margin: 2em 1em;
 }
 
 .configText{
-    color: #FFC83D;
+    color: #00BFAE;
     font-size: 1.2em;
 }
 
 .blockText{
-    color: white;
-    font-family: "Montserrat", sans-serif;
+    color: #607D8B;
     margin: 1em 1.5em;
+    font-weight: 500;
 }
 
 #h3Text{
-    color: #FFC83D;
-    font-family: "Montserrat", sans-serif;
+    color: #00BFAE;
     font-size: 1.6em;
     margin: 1em;
 }

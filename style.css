@@ -14,7 +14,6 @@ header {
     align-items: center;
     flex-direction: row;
     justify-content: space-between;
-    /* margin: 0 2em 2em; */
     width: 100%;
     position: relative;
     z-index: 10;
@@ -35,9 +34,7 @@ nav {
     text-decoration: none;
     font-size: 20px;
     font-weight: 500;
-    font-family: "Contrail One", serif;
     letter-spacing: 1px;
-    /* color: #B0BEC5;  cor definitiva*/
     color: white;
     transition: 0.3s;
     text-align: center;
@@ -59,11 +56,6 @@ nav ul {
     list-style-type: none;
     margin-right: 5em;
 }
-
-nav ul li {
-    position: relative;
-}
-
 
 .subMenu{
     display: none;
@@ -102,23 +94,15 @@ body {
 
 
 #presentation{
-    /* background-image: url(img/Background3.jpg); */
     background-color: #E0E0E0;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    /* box-shadow: inset 4px 6px 20px 0px rgb(0, 0, 0) ; */
-    /* margin-top: -160px; */
-    padding: 10% 0 15%;
+    padding: 6% 0 8%;
     display: grid;
     grid-template-columns: 50% 50%;
 }
 
 #presentation section {
-    margin-top: 15%;
     margin-left: 5%;
     margin-right: 5%;
-    /* margin-bottom: 15%; */
     width: 80%;
     border-radius: 0.4em;
 }
@@ -130,7 +114,7 @@ body {
 
 #text1 {
     color: #00BFAE;
-    font-size: 2.2em;
+    font-size: 2.8em;
     padding: 1em 0.5em 1em;
     text-align: center;
 }
@@ -142,8 +126,8 @@ body {
     height: 1600px;
 }
 
-.titleContainer h1 {
-    color: #FFC83D;
+.titleContainer h2{
+    color: #00BFAE;
     text-align: center;
     padding-top: 1em;
     font-size: 38px;
@@ -189,11 +173,7 @@ body {
 
 
 #plansValueContainer {
-    background-image: url(img/bgPlanos.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    box-shadow: inset 6px 6px 20px 0px rgb(0, 0, 0) ;
+    background-color: #E0E0E0;
 }
 
 #blockValue {
@@ -208,36 +188,35 @@ body {
 }
 
 .valueContainer{
-    background-color: #252423;
+    background-color: #00BFAE;
     height: 550px;
     width: 260px;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    transition: 0.3s;
 }
 
 .valueContainer:hover {
-    border: 2px solid #FFC83D;
-    /* width: 250px; */
-    /* height: 570px; */
-    transition: 0.3s;
     cursor: pointer;
-    box-shadow: 0px 0px 10px 1px #FFC83D;
+    box-shadow: 0px 0px 8px 1px #000000;
 }
 
 #free {
-    color: #FFC83D;
+    color: #FFFFFF;
     
 }
 
+#freeText{
+    font-size: 2.2em;
+    margin-bottom: 10%;
+}
 
 .textPlans{
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: white;
+    color: #FFFFFF;
 }
 
 .textPlans li{
@@ -246,14 +225,14 @@ body {
 }
 
 .valueContainer h4 {
-    color: white;
+    color: #FFFFFF;
     font-size: 2em;
     padding-top: 1em;
     margin-bottom: 20%;
 }
 
 .valuePlans {
-    color: #FFC83D;
+    color: #FFFFFF;
     font-weight: bolder;
     font-size: 2.5em;
     text-align: center;
@@ -277,22 +256,30 @@ body {
 #btnPlans button{
     font-size: 1.4em;
     font-weight: bold;
-    color: #252423;
-    background-color: #FFC83D;
+    color: #FFFFFF;
+    background-color: #00BFAE;
     padding: 10px 30px;
-    border-radius: 8%;
-    border: 1px solid #252423;
+    border-radius: 10px;
+    border: 2px solid #607D8B;
 }
 
 #btnPlans button:hover {
-    color: white;
-    transition: 0.3s;
+    color: #FFFFFF;
+    background-color: #607D8B;
     cursor: pointer;
 }
 
 #blockAdvantage{
-    background-color: #252423;
+    background-color: #00BFAE;
     padding-bottom: 4em;
+}
+
+#blockAdvantage h2{
+    color: #FFFFFF;
+    text-align: center;
+    padding-top: 1em;
+    font-size: 38px;
+    margin-bottom: 1.3em;
 }
 
 #blockImg {
@@ -316,7 +303,7 @@ body {
     width: 250px;
     height: auto;
     padding: 0.5em;
-    border: 1px solid #FFC83D;
+    border: 2px solid #FFFFFF;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -327,19 +314,23 @@ body {
 .titleAdv{
     text-align: center;
     margin-bottom: 0.8em;
-    color: #FFC83D;
+    color: #FFFFFF;
     font-size: 1.2em;
     font-weight: 600;
 }
 
 .blockAdv p {
-    color: #FFC83D;
+    color: #FFFFFF;
     font-size: 1.3em;
 }
 
 #gymtriInfo{
-    background-color: #252423ee;
+    background-color: #00bfafc7;
     padding-bottom: 4em;
+}
+
+#infoBlock h2{
+    color: #FFFFFF;
 }
 
 #gymtriInfo p {
@@ -355,7 +346,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #252423;
+    background-color: #E0E0E0;
 }
 
 #searchCEP {
@@ -365,10 +356,10 @@ body {
 #cep {
     padding: 1em;
     border-radius: 10px;
-    background-color: #FFC83D;
-    color: #252423;
+    background-color: #FFFFFF;
+    color: #607D8B;
     font-weight: bold;
-    border: 1px solid #252423;
+    border: 1px solid #607D8B;
     text-align: center;
     font-size: 1em;
 }
@@ -376,16 +367,17 @@ body {
 #pesquisar {
     padding: 1em;
     border-radius: 10px;
-    border: 1px solid #252423;
-    background-color: white;
+    border: 1px solid #607D8B;
+    background-color: #00BFAE;
     font-weight: bold;
     font-size: 1em;
+    color: #FFFFFF;
 }
 
 #pesquisar:hover {
     cursor: pointer;
     border: 1px solid white;
-    background-color: #dfdfdf;
+    background-color: #607D8B;
 }
 
 #blockMap {
@@ -394,7 +386,7 @@ body {
 }
 
 footer {
-    background-color: #111111;
+    background-color: #00BFAE;
     height: auto; 
 }
 
@@ -417,7 +409,7 @@ footer hr{
 }
 
 #footerInfos{
-    background-color: #111111;
+    background-color: #00BFAE;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -429,7 +421,7 @@ footer hr{
 }
 
 .blockFooter h3{
-    color: #FFC83D;
+    color: #FFFFFF;
     margin-bottom: 3em;
 }
 
@@ -451,7 +443,7 @@ footer hr{
 }
 
 .blockFooter ul li a:hover{
-    color: #FFC83D;
+    color: #607D8B;
     transition: 0.3s;
 }
 

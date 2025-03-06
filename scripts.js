@@ -12,8 +12,5 @@ const myObserver = new IntersectionObserver((entries) => {
 
 const textItem = document.querySelectorAll('.textItem')
 console.log(textItem)
-const imgItem = document.querySelectorAll('.imgItem')
 
 textItem.forEach((element) => myObserver.observe(element))
-
-imgItem.forEach((img) => myObserver.observe(img))
