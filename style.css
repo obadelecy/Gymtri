@@ -120,10 +120,14 @@ body {
 }
 
 #offer {
-    background-color: #00BFAE;
+    background-color: #E0E0E0;
     padding: 6%;
     width: auto;
     height: 1600px;
+}
+
+#offer320px{
+    display: none;
 }
 
 .titleContainer h2{
@@ -135,11 +139,12 @@ body {
 }
 
 #offerGrid {
+    padding: 0 5% 0;
     width: auto;
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-template-rows: 38% 38% 38%;
-    gap: 5%;
+    grid-template-rows: auto;
+    gap: 10%;
 }
 
 .imgItem img{
@@ -148,13 +153,13 @@ body {
 }
 
 .textItem h3{
-    color: white;
+    color: #00BFAE;
     font-size: 2.5em;
     margin-bottom: 5%;
 }
 
 .textItem{
-    color: white;
+    color: #00BFAE;
     text-align: left;
     font-size: 1.4em;
     padding-top: 2%;
@@ -269,6 +274,10 @@ body {
     cursor: pointer;
 }
 
+#blockAdvantage320px{
+    display: none;
+}
+
 #blockAdvantage{
     background-color: #00BFAE;
     padding-bottom: 4em;
@@ -325,7 +334,7 @@ body {
 }
 
 #gymtriInfo{
-    background-color: #00bfafc7;
+    background-color: #00BFAE;
     padding-bottom: 4em;
 }
 
@@ -346,7 +355,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #E0E0E0;
+    background-color: #ffffff;
 }
 
 #searchCEP {
@@ -447,3 +456,1605 @@ footer hr{
     transition: 0.3s;
 }
 
+#menuHamburguer{
+    display: none;
+}
+
+#menuHamb{
+    display: none;
+}
+
+
+@media (max-width: 320px) {
+    * {
+        overflow-x: hidden;
+    }
+
+    header {
+        padding: 10px;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    /* Checkbox invisível */
+    #menuHamburguer {
+        position: absolute;
+        opacity: 0;
+    }
+
+    /* Ícone do Menu Hambúrguer */
+    .menuBtn {
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+        position: relative;
+    }
+
+    .menuBtn span {
+        width: 30px;
+        height: 4px;
+        background-color: #FFFFFF;
+        margin: 5px 0;
+        transition: 0.3s;
+        border-radius: 30px;
+    }
+
+    /* Estilizando o menu */
+    #menuHamb {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 250px;
+        height: 100vh;
+        background-color: #00BFAE;
+        padding-top: 60px;
+        transition: left 0.3s ease-in-out;
+    }
+
+    #menuHamb ul {
+        list-style: none;
+        text-align: center;
+    }
+
+    #menuHamb ul li {
+        padding: 10px 0;
+    }
+
+    #menuHamb ul li a {
+        color: #FFF;
+        text-decoration: none;
+        font-size: 20px;
+    }
+
+    /* O menu será exibido quando o checkbox for marcado */
+    #menuHamburguer:checked + .menuBtn + #menuHamb {
+        left: 0 !important;
+        display: block !important;
+    }
+
+    /* Efeito no ícone do menu */
+    #menuHamburguer:checked+.menuBtn span:nth-child(1) {
+        transform: rotate(45deg) translate(8px, 8px);
+    }
+
+    #menuHamburguer:checked+.menuBtn span:nth-child(2) {
+        opacity: 0;
+    }
+
+    #menuHamburguer:checked+.menuBtn span:nth-child(3) {
+        transform: rotate(-45deg) translate(11px, -11px);
+    }
+
+    /*Section Inicio da página (Apresentação)*/
+    #presentation {
+        padding: 6% 0 8%;
+        grid-template-columns: 100%;
+    }
+    
+    #presentation section { 
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+    }
+    
+    #imgPresentation img {
+        display: none;
+    }
+    
+    #text1 {
+        font-size: 1.8em;
+        padding: 1em 0.5em 1em;
+    }
+
+    /*Section Sobre*/
+    #gymtriInfo {
+        background-color: #00bfafc7;
+        padding: 1em;
+    }
+    
+    #infoBlock h2 {
+        color: #FFFFFF;
+        font-size: 1.5em;
+    }
+    
+    #gymtriInfo p {
+        width: auto;
+        color: white;
+        font-size: 1em;
+        text-align: center;
+    }
+    /*Section Serviços oferecidos*/
+    #offer {
+        display: none;
+    }
+
+    #offer320px{
+        display: block;
+        padding: 5%;
+        overflow: hidden;
+    }
+
+    #offer320px section {
+        height: auto;
+    }
+    
+    #offerGrid320px {
+        width: 100%;
+        max-width: 100vw;
+        overflow: hidden;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: auto;
+    }
+    
+    .imgItem320px img {
+        width: 100%;
+        border-radius: 5%;
+    }
+    
+    .textItem320px h3 {
+        font-size: 1.8em;
+        color: #00BFAE;
+        margin: 5% auto;
+        text-align: center;
+    }
+    
+    .textItem320px p{
+        font-size: 1em;
+        color: #00BFAE;
+        margin: 5% auto;
+        padding: 1%;
+        
+    }
+
+    .textItem320px{
+        opacity: 0;
+        filter: blur(10px);
+        transition: all 1s;
+        transform: translateX(-100%);
+    }
+    
+    .show {
+        opacity: 1;
+        transition: all 1s;
+        filter: blur(0);
+        transform: translateX(0);
+    }
+
+    /*Section vantagens*/
+    #blockAdvantage {
+        display: none;
+    }
+
+    #blockAdvantage320px {
+        display: block;
+    }
+    
+    #blockAdvantage320px {
+        background-color: #00BFAE;
+    }
+    
+    #blockAdvantage320px h2 {
+        text-align: center;
+        font-size: 2em;
+        color: #FFFFFF;
+    }
+    
+    .blockImg320px {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-bottom: 1em;
+    }
+    
+    .blockImg320px {
+        width: 85px;
+        margin: 0 30%;
+        padding-bottom: 1em;
+    }
+    
+    #descripBlock320px {
+        padding: 0 10%;
+        margin-bottom: 10%;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: auto;
+    }
+
+    /*Section Planos*/
+    .blockAdv {
+        margin-bottom: 4em;
+    }
+    
+    .titleAdv {
+        font-size: 1.5em;
+    }
+    
+    .blockAdv p {
+        font-size: 1em;
+    }
+    
+    #blockValue {
+        padding-bottom: 8%;
+    }
+
+    .titleContainer h2{
+        font-size: 1.8em;
+    }
+    
+    .valueContainer {
+        margin-bottom: 6em;
+    }
+    
+    .valueContainer:hover {
+        box-shadow: 0px 0px 8px 1px #000000;
+    }
+
+    #freeText {
+        font-size: 1.4em;
+        margin-bottom: 1em;
+    }
+
+    .textPlans li {
+        width: 50%;
+    }
+    
+    .valueContainer h4 {
+        font-size: 1.8em;
+        margin-bottom: 1em;
+    }
+    
+    .valuePlans {
+        font-size: 2.4em;
+        text-align: center;
+    }
+    
+    #blockValue p {
+        color: white;
+        text-align: center;
+        padding-bottom: 3em;
+    }
+
+    /*Footer*/
+
+    footer {
+        background-color: #00BFAE;
+        height: auto;
+    }
+    
+    #footerImg {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    #footerImg img {
+        width: 50%;
+        display: flex;
+    }
+    
+    footer hr {
+        border-color: white;
+        margin: 1em 2em;
+    }
+    
+    #footerInfos {
+        display: block;
+        background-color: #00BFAE;
+    }
+    
+    .blockFooter {
+        margin: 2em 2em;
+        width: 80%;
+    }
+    
+    .blockFooter h3 {
+        font-size: 1.5em;
+        color: #FFFFFF;
+        text-align: center;
+        margin-bottom: 1em;
+    }
+    
+    .blockFooter li {
+        display: block;
+        text-align: center;
+        margin-bottom: 0.8em;
+    }
+    
+    .blockFooter li a {
+        color: #FFFFFF;
+        text-decoration: none;
+    }
+    
+    .blockFooter ul li img {
+        width: 8%;
+        display: block;
+        margin: 0.5em auto 0
+    }
+    
+    .blockFooter ul li a:hover {
+        color: #607D8B;
+    }
+    
+}
+
+@media (min-width: 320px) and (max-width: 375px){
+    * {
+        overflow-x: hidden;
+    }
+
+    header {
+        padding: 10px;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    /* Checkbox invisível */
+    #menuHamburguer {
+        position: absolute;
+        opacity: 0;
+    }
+
+    /* Ícone do Menu Hambúrguer */
+    .menuBtn {
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+        position: relative;
+    }
+
+    .menuBtn span {
+        width: 30px;
+        height: 4px;
+        background-color: #FFFFFF;
+        margin: 5px 0;
+        transition: 0.3s;
+        border-radius: 30px;
+    }
+
+    /* Estilizando o menu */
+    #menuHamb {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 250px;
+        height: 100vh;
+        background-color: #00BFAE;
+        padding-top: 60px;
+        transition: left 0.3s ease-in-out;
+    }
+
+    #menuHamb ul {
+        list-style: none;
+        text-align: center;
+    }
+
+    #menuHamb ul li {
+        padding: 10px 0;
+    }
+
+    #menuHamb ul li a {
+        color: #FFF;
+        text-decoration: none;
+        font-size: 20px;
+    }
+
+    /* O menu será exibido quando o checkbox for marcado */
+    #menuHamburguer:checked + .menuBtn + #menuHamb {
+        left: 0 !important;
+        display: block !important;
+    }
+
+    /* Efeito no ícone do menu */
+    #menuHamburguer:checked+.menuBtn span:nth-child(1) {
+        transform: rotate(45deg) translate(8px, 8px);
+    }
+
+    #menuHamburguer:checked+.menuBtn span:nth-child(2) {
+        opacity: 0;
+    }
+
+    #menuHamburguer:checked+.menuBtn span:nth-child(3) {
+        transform: rotate(-45deg) translate(11px, -11px);
+    }
+
+    /*Section Inicio da página (Apresentação)*/
+    #presentation {
+        padding: 6% 0 8%;
+        grid-template-columns: 100%;
+    }
+    
+    #presentation section { 
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+    }
+    
+    #imgPresentation img {
+        display: none;
+    }
+    
+    #text1 {
+        font-size: 1.8em;
+        padding: 1em 0.5em 1em;
+    }
+
+    /*Section Sobre*/
+    #gymtriInfo {
+        background-color: #00bfafc7;
+        padding: 1em;
+    }
+    
+    #infoBlock h2 {
+        color: #FFFFFF;
+        font-size: 1.5em;
+    }
+    
+    #gymtriInfo p {
+        width: auto;
+        color: white;
+        font-size: 1em;
+        text-align: center;
+    }
+    /*Section Serviços oferecidos*/
+    #offer {
+        display: none;
+    }
+
+    #offer320px{
+        display: block;
+        padding: 5%;
+        overflow: hidden;
+    }
+
+    #offer320px section {
+        height: auto;
+    }
+    
+    #offerGrid320px {
+        width: 100%;
+        max-width: 100vw;
+        overflow: hidden;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: auto;
+    }
+    
+    .imgItem320px img {
+        width: 100%;
+        border-radius: 5%;
+    }
+    
+    .textItem320px h3 {
+        font-size: 1.8em;
+        color: #00BFAE;
+        margin: 5% auto;
+        text-align: center;
+    }
+    
+    .textItem320px p{
+        font-size: 1em;
+        color: #00BFAE;
+        margin: 5% 12%;
+        padding: 1%;
+    }
+
+    .textItem320px{
+        opacity: 0;
+        filter: blur(10px);
+        transition: all 1s;
+        transform: translateX(-100%);
+    }
+    
+    .show {
+        opacity: 1;
+        transition: all 1s;
+        filter: blur(0);
+        transform: translateX(0);
+    }
+
+    /*Section vantagens*/
+    #blockAdvantage {
+        display: none;
+    }
+
+    #blockAdvantage320px {
+        display: block;
+    }
+    
+    #blockAdvantage320px {
+        background-color: #00BFAE;
+    }
+    
+    #blockAdvantage320px h2 {
+        text-align: center;
+        font-size: 2em;
+        color: #FFFFFF;
+    }
+    
+    .blockImg320px {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-bottom: 1em;
+        width: 85px;
+        margin: 0 auto;
+        padding-bottom: 1em;
+    }
+    
+    #descripBlock320px {
+        padding: 0 10%;
+        margin-bottom: 10%;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: auto;
+    }
+
+    /*Section Planos*/
+    .blockAdv {
+        margin: 0 auto 2em;
+    }
+    
+    .titleAdv {
+        font-size: 1.5em;
+    }
+    
+    .blockAdv p {
+        font-size: 1em;
+    }
+    
+    #blockValue {
+        padding-bottom: 8%;
+    }
+
+    .titleContainer h2{
+        font-size: 1.8em;
+    }
+    
+    .valueContainer {
+        margin-bottom: 6em;
+    }
+    
+    .valueContainer:hover {
+        box-shadow: 0px 0px 8px 1px #000000;
+    }
+
+    #freeText {
+        font-size: 1.4em;
+        margin-bottom: 1em;
+    }
+
+    .textPlans li {
+        width: 50%;
+    }
+    
+    .valueContainer h4 {
+        font-size: 1.8em;
+        margin-bottom: 1em;
+    }
+    
+    .valuePlans {
+        font-size: 2.4em;
+        text-align: center;
+    }
+    
+    #blockValue p {
+        color: white;
+        text-align: center;
+        padding-bottom: 3em;
+    }
+
+    /*Footer*/
+
+    footer {
+        background-color: #00BFAE;
+        height: auto;
+    }
+    
+    #footerImg {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    #footerImg img {
+        margin: 0 auto;
+        width: 50%;
+        display: flex;
+    }
+    
+    footer hr {
+        border-color: white;
+        margin: 1em 2em;
+    }
+    
+    #footerInfos {
+        display: block;
+        background-color: #00BFAE;
+    }
+    
+    .blockFooter {
+        margin: 2em 2em;
+        width: 80%;
+    }
+    
+    .blockFooter h3 {
+        font-size: 1.5em;
+        color: #FFFFFF;
+        text-align: center;
+        margin-bottom: 1em;
+    }
+    
+    .blockFooter li {
+        display: block;
+        text-align: center;
+        margin-bottom: 0.8em;
+    }
+    
+    .blockFooter li a {
+        color: #FFFFFF;
+        text-decoration: none;
+    }
+    
+    .blockFooter ul li img {
+        width: 8%;
+        display: block;
+        margin: 0.5em auto 0
+    }
+    
+    .blockFooter ul li a:hover {
+        color: #607D8B;
+    }
+    
+}
+
+@media (min-width: 375px) and (max-width: 425px){
+    * {
+        overflow-x: hidden;
+    }
+
+    header {
+        padding: 10px;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    /* Checkbox invisível */
+    #menuHamburguer {
+        position: absolute;
+        opacity: 0;
+    }
+
+    /* Ícone do Menu Hambúrguer */
+    .menuBtn {
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+        position: relative;
+    }
+
+    .menuBtn span {
+        width: 30px;
+        height: 4px;
+        background-color: #FFFFFF;
+        margin: 5px 0;
+        transition: 0.3s;
+        border-radius: 30px;
+    }
+
+    /* Estilizando o menu */
+    #menuHamb {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 250px;
+        height: 100vh;
+        background-color: #00BFAE;
+        padding-top: 60px;
+        transition: left 0.3s ease-in-out;
+    }
+
+    #menuHamb ul {
+        list-style: none;
+        text-align: center;
+    }
+
+    #menuHamb ul li {
+        padding: 10px 0;
+    }
+
+    #menuHamb ul li a {
+        color: #FFF;
+        text-decoration: none;
+        font-size: 20px;
+    }
+
+    /* O menu será exibido quando o checkbox for marcado */
+    #menuHamburguer:checked + .menuBtn + #menuHamb {
+        left: 0 !important;
+        display: block !important;
+    }
+
+    /* Efeito no ícone do menu */
+    #menuHamburguer:checked+.menuBtn span:nth-child(1) {
+        transform: rotate(45deg) translate(8px, 8px);
+    }
+
+    #menuHamburguer:checked+.menuBtn span:nth-child(2) {
+        opacity: 0;
+    }
+
+    #menuHamburguer:checked+.menuBtn span:nth-child(3) {
+        transform: rotate(-45deg) translate(11px, -11px);
+    }
+
+    /*Section Inicio da página (Apresentação)*/
+    #presentation {
+        padding: 6% 0 8%;
+        grid-template-columns: 100%;
+    }
+    
+    #presentation section { 
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+    }
+    
+    #imgPresentation img {
+        display: none;
+    }
+    
+    #text1 {
+        font-size: 1.8em;
+        padding: 1em 0.5em 1em;
+    }
+
+    /*Section Sobre*/
+    #gymtriInfo {
+        background-color: #00bfafc7;
+        padding: 1em;
+    }
+    
+    #infoBlock h2 {
+        color: #FFFFFF;
+        font-size: 1.5em;
+    }
+    
+    #gymtriInfo p {
+        width: auto;
+        color: white;
+        font-size: 1em;
+        text-align: center;
+    }
+    /*Section Serviços oferecidos*/
+    #offer {
+        display: none;
+    }
+
+    #offer320px{
+        display: block;
+        padding: 5%;
+        overflow: hidden;
+    }
+
+    #offer320px section {
+        height: auto;
+    }
+    
+    #offerGrid320px {
+        width: 100%;
+        max-width: 100vw;
+        overflow: hidden;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: auto;
+    }
+    
+    .imgItem320px img {
+        width: 100%;
+        border-radius: 5%;
+    }
+    
+    .textItem320px h3 {
+        font-size: 1.8em;
+        color: #00BFAE;
+        margin: 5% auto;
+        text-align: center;
+    }
+    
+    .textItem320px p{
+        font-size: 1em;
+        color: #00BFAE;
+        margin: 5% 12%;
+        padding: 1%;
+    }
+
+    .textItem320px{
+        opacity: 0;
+        filter: blur(10px);
+        transition: all 1s;
+        transform: translateX(-100%);
+    }
+    
+    .show {
+        opacity: 1;
+        transition: all 1s;
+        filter: blur(0);
+        transform: translateX(0);
+    }
+
+    /*Section vantagens*/
+    #blockAdvantage {
+        display: none;
+    }
+
+    #blockAdvantage320px {
+        display: block;
+    }
+    
+    #blockAdvantage320px {
+        background-color: #00BFAE;
+    }
+    
+    #blockAdvantage320px h2 {
+        text-align: center;
+        font-size: 2em;
+        color: #FFFFFF;
+    }
+    
+    .blockImg320px {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-bottom: 1em;
+        width: 85px;
+        margin: 0 auto;
+        padding-bottom: 1em;
+    }
+    
+    #descripBlock320px {
+        padding: 0 10%;
+        margin-bottom: 10%;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: auto;
+    }
+
+    /*Section Planos*/
+    .blockAdv {
+        margin: 0 auto 4em;
+    }
+    
+    .titleAdv {
+        font-size: 1.5em;
+    }
+    
+    .blockAdv p {
+        font-size: 1em;
+    }
+    
+    #blockValue {
+        padding-bottom: 8%;
+    }
+
+    .titleContainer h2{
+        font-size: 1.8em;
+        padding: 1em;
+    }
+    
+    .valueContainer {
+        margin-bottom: 6em;
+    }
+    
+    .valueContainer:hover {
+        box-shadow: 0px 0px 8px 1px #000000;
+    }
+
+    #freeText {
+        font-size: 1.4em;
+        margin-bottom: 1em;
+    }
+
+    .textPlans li {
+        width: 50%;
+    }
+    
+    .valueContainer h4 {
+        font-size: 1.8em;
+        margin-bottom: 1em;
+    }
+    
+    .valuePlans {
+        font-size: 2.4em;
+        text-align: center;
+    }
+    
+    #blockValue p {
+        color: white;
+        text-align: center;
+        padding-bottom: 3em;
+    }
+
+    /*Footer*/
+
+    footer {
+        background-color: #00BFAE;
+        height: auto;
+    }
+    
+    #footerImg {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    #footerImg img {
+        margin: 0 auto;
+        width: 50%;
+        display: flex;
+    }
+    
+    footer hr {
+        border-color: white;
+        margin: 1em 2em;
+    }
+    
+    #footerInfos {
+        display: block;
+        background-color: #00BFAE;
+    }
+    
+    .blockFooter {
+        margin: 2em 2em;
+        width: 85%;
+    }
+    
+    .blockFooter h3 {
+        font-size: 1.5em;
+        color: #FFFFFF;
+        text-align: center;
+        margin-bottom: 1em;
+    }
+    
+    .blockFooter li {
+        display: block;
+        text-align: center;
+        margin-bottom: 0.8em;
+    }
+    
+    .blockFooter li a {
+        color: #FFFFFF;
+        text-decoration: none;
+    }
+    
+    .blockFooter ul li img {
+        width: 8%;
+        display: block;
+        margin: 0.5em auto 0
+    }
+    
+    .blockFooter ul li a:hover {
+        color: #607D8B;
+    }
+    
+}
+
+@media (min-width: 425px) and (max-width: 768px){
+    * {
+        overflow-x: hidden;
+    }
+
+    header {
+        padding: 10px;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    /* Checkbox invisível */
+    #menuHamburguer {
+        position: absolute;
+        opacity: 0;
+    }
+
+    /* Ícone do Menu Hambúrguer */
+    .menuBtn {
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+        position: relative;
+    }
+
+    .menuBtn span {
+        width: 30px;
+        height: 4px;
+        background-color: #FFFFFF;
+        margin: 5px 0;
+        transition: 0.3s;
+        border-radius: 30px;
+    }
+
+    /* Estilizando o menu */
+    #menuHamb {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 250px;
+        height: 100vh;
+        background-color: #00BFAE;
+        padding-top: 60px;
+        transition: left 0.3s ease-in-out;
+    }
+
+    #menuHamb ul {
+        list-style: none;
+        text-align: center;
+    }
+
+    #menuHamb ul li {
+        padding: 10px 0;
+    }
+
+    #menuHamb ul li a {
+        color: #FFF;
+        text-decoration: none;
+        font-size: 20px;
+    }
+
+    /* O menu será exibido quando o checkbox for marcado */
+    #menuHamburguer:checked + .menuBtn + #menuHamb {
+        left: 0 !important;
+        display: block !important;
+    }
+
+    /* Efeito no ícone do menu */
+    #menuHamburguer:checked+.menuBtn span:nth-child(1) {
+        transform: rotate(45deg) translate(8px, 8px);
+    }
+
+    #menuHamburguer:checked+.menuBtn span:nth-child(2) {
+        opacity: 0;
+    }
+
+    #menuHamburguer:checked+.menuBtn span:nth-child(3) {
+        transform: rotate(-45deg) translate(11px, -11px);
+    }
+    
+    /*Section Inicio da página (Apresentação)*/
+    #presentation {
+        padding: 6% 0 8%;
+        grid-template-columns: 100%;
+    }
+    
+    #presentation section { 
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+    }
+    
+    #imgPresentation img {
+        display: none;
+    }
+    
+    #text1 {
+        font-size: 2em;
+        padding: 1em 0.5em 1em;
+    }
+
+    /*Section Sobre*/
+    #gymtriInfo {
+        background-color: #00bfafc7;
+        padding: 1em 1em;
+    }
+    
+    #infoBlock h2 {
+        color: #FFFFFF;
+        font-size: 2em;
+        margin-bottom: 2%;
+    }
+    
+    #gymtriInfo p {
+        width: auto;
+        color: white;
+        font-size: 1.2em;
+        text-align: center;
+    }
+    /*Section Serviços oferecidos*/
+    #offer {
+        display: none;
+    }
+
+    #offer320px{
+        display: block;
+        padding: 5%;
+        overflow: hidden;
+    }
+
+    #offer320px section {
+        height: auto;
+    }
+    
+    #offerGrid320px {
+        width: 100%;
+        max-width: 100vw;
+        overflow: hidden;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: auto;
+    }
+    
+    .imgItem320px img {
+        width: 100%;
+        border-radius: 5%;
+    }
+    
+    .textItem320px h3 {
+        font-size: 2em;
+        color: #00BFAE;
+        margin: 5% auto;
+        text-align: center;
+    }
+    
+    .textItem320px p{
+        font-size: 1.2em;
+        color: #00BFAE;
+        text-align: center;
+        margin: 5% 12%;
+        padding: 1%;
+    }
+
+    .textItem320px{
+        opacity: 0;
+        filter: blur(10px);
+        transition: all 1s;
+        transform: translateX(-100%);
+    }
+    
+    .show {
+        opacity: 1;
+        transition: all 1s;
+        filter: blur(0);
+        transform: translateX(0);
+    }
+
+    /*Section vantagens*/
+    #blockAdvantage {
+        display: none;
+    }
+
+    #blockAdvantage320px {
+        display: block;
+    }
+    
+    #blockAdvantage320px {
+        background-color: #00BFAE;
+    }
+    
+    #blockAdvantage320px h2 {
+        text-align: center;
+        font-size: 2em;
+        color: #FFFFFF;
+    }
+    
+    .blockImg320px {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-bottom: 1em;
+        width: 80px;
+        margin: 0 auto;
+        padding-bottom: 1em;
+    }
+    
+    #descripBlock320px {
+        padding: 0 15%;
+        margin-bottom: 10%;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: auto;
+    }
+
+    /*Section Planos*/
+    .blockAdv {
+        margin: 0 auto 4em;
+        padding: 1em;
+
+        height: 350px;
+    }
+    
+    .titleAdv {
+        font-size: 2em;
+    }
+    
+    .blockAdv p {
+        font-size: 1.2em;
+    }
+    
+    #blockValue {
+        padding-bottom: 8%;
+    }
+
+    .titleContainer h2{
+        font-size: 2em;
+        padding: 1em;
+    }
+    
+    .valueContainer {
+        margin-bottom: 6em;
+        height: 670px;
+        width: 300px;
+    }
+    
+    .valueContainer:hover {
+        box-shadow: 0px 0px 8px 1px #000000;
+    }
+
+    #freeText {
+        font-size: 1.6em;
+        margin-bottom: 1em;
+    }
+
+    .textPlans li {
+        width: 50%;
+        font-size: 1.2em;
+    }
+    
+    .valueContainer h4 {
+        font-size: 2em;
+        margin-bottom: 1em;
+    }
+    
+    .valuePlans {
+        font-size: 2em;
+        text-align: center;
+    }
+    
+    #blockValue p {
+        color: white;
+        text-align: center;
+        padding-bottom: 3em;
+        font-size: 1.6em;
+    }
+    
+    #btnPlans button{
+        font-size: 1.6em;
+    }
+
+    /*Footer*/
+
+    footer {
+        background-color: #00BFAE;
+        height: auto;
+    }
+    
+    #footerImg {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    #footerImg img {
+        margin: 0 auto;
+        width: 50%;
+        display: flex;
+    }
+    
+    footer hr {
+        border-color: white;
+        margin: 1em 2em;
+    }
+    
+    #footerInfos {
+        display: block;
+        background-color: #00BFAE;
+    }
+    
+    .blockFooter {
+        margin: 3em 3em;
+        width: 80%;
+    }
+    
+    .blockFooter h3 {
+        font-size: 2em;
+        color: #FFFFFF;
+        text-align: center;
+        margin-bottom: 1em;
+    }
+    
+    .blockFooter li {
+        display: block;
+        text-align: center;
+        margin-bottom: 0.8em;
+    }
+    
+    .blockFooter li a {
+        color: #FFFFFF;
+        text-decoration: none;
+        font-size: 1.2em;
+    }
+    
+    .blockFooter ul li img {
+        width: 10%;
+        display: block;
+        margin: 0.5em auto 0
+    }
+    
+    .blockFooter ul li a:hover {
+        color: #607D8B;
+    }
+    
+}
+
+@media (min-width: 768px) and (max-width: 1024px){
+    * {
+        overflow-x: hidden;
+    }
+
+    header {
+        padding: 5px;
+    }
+
+    header img {
+        width: 100px;
+    } 
+
+    /*Section Inicio da página (Apresentação)*/
+    #presentation {
+        padding: 10% 20%;
+        grid-template-columns: 100%;
+    }
+    
+    #presentation section { 
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    }
+
+    #imgPresentation img{
+        display: none;
+    }
+    
+    #text1 {
+        font-size: 2.4em;
+        padding: 0 0.8em 1em;
+    }
+
+    /*Section Sobre*/
+    #gymtriInfo {
+        background-color: #00bfafc7;
+        padding: 1em 1em;
+    }
+    
+    #infoBlock h2 {
+        color: #FFFFFF;
+        font-size: 3em;
+        margin-bottom: 1%;
+    }
+    
+    #gymtriInfo p {
+        width: auto;
+        color: white;
+        font-size: 2em;
+        text-align: center;
+    }
+    /*Section Serviços oferecidos*/
+
+    #offer320px{
+        display: block;
+    }
+
+    
+    .show {
+        opacity: 1;
+        transition: all 1s;
+        filter: blur(0);
+        transform: translateX(0);
+    }
+
+    /*Section vantagens*/
+    #blockAdvantage {
+        display: none;
+    }
+
+    #blockAdvantage320px {
+        display: block;
+    }
+    
+    #blockAdvantage320px {
+        background-color: #00BFAE;
+    }
+    
+    #blockAdvantage320px h2 {
+        text-align: center;
+        font-size: 2.8em;
+        color: #FFFFFF;
+    }
+    
+    .blockImg320px {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-bottom: 1em;
+        width: 110px;
+        margin: 0 auto;
+        padding-bottom: 1em;
+    }
+    
+    #descripBlock320px {
+        padding: 0 15%;
+        margin-bottom: 10%;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: auto;
+    }
+
+    /*Section Planos*/
+    .blockAdv {
+        margin: 0 auto 4em;
+        padding: 1em;
+        width: 400px;
+        height: 350px;
+    }
+    
+    .titleAdv {
+        font-size: 2em;
+    }
+    
+    .blockAdv p {
+        font-size: 1.9em;
+    }
+    
+    #blockValue {
+        padding-bottom: 8%;
+    }
+
+    .titleContainer h2{
+        font-size: 2.8em;
+        padding: 1em;
+    }
+    
+    .valueContainer {
+        margin-bottom: 6em;
+        height: 900px;
+        width: 400px;
+    }
+    
+    .valueContainer:hover {
+        box-shadow: 0px 0px 8px 1px #000000;
+    }
+
+    #freeText {
+        font-size: 1.9em;
+        margin-bottom: 1em;
+    }
+
+    .textPlans li {
+        width: 50%;
+        font-size: 1.8em;
+    }
+    
+    .valueContainer h4 {
+        font-size: 2.4em;
+        margin-bottom: 1em;
+    }
+    
+    .valuePlans {
+        font-size: 2.6em;
+        text-align: center;
+    }
+    
+    #blockValue p {
+        color: white;
+        text-align: center;
+        padding-bottom: 3em;
+        font-size: 1.6em;
+    }
+
+    #btnPlans{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 4em;
+    }
+    
+    #btnPlans button{
+        font-size: 2.4em;
+    }
+
+    /*Footer*/
+
+    footer {
+        background-color: #00BFAE;
+        height: auto;
+    }
+    
+    #footerImg {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    #footerImg img {
+        margin: 0 auto;
+        width: 50%;
+        display: flex;
+    }
+    
+    footer hr {
+        border-color: white;
+        margin: 1em 2em;
+    }
+    
+    #footerInfos {
+        display: block;
+        background-color: #00BFAE;
+    }
+    
+    .blockFooter {
+        margin: 3em 3em;
+        width: 85%;
+    }
+    
+    .blockFooter h3 {
+        font-size: 2em;
+        color: #FFFFFF;
+        text-align: center;
+        margin-bottom: 1em;
+    }
+    
+    .blockFooter li {
+        display: block;
+        text-align: center;
+        margin-bottom: 0.8em;
+    }
+    
+    .blockFooter li a {
+        color: #FFFFFF;
+        text-decoration: none;
+        font-size: 1.6em;
+    }
+    
+    .blockFooter ul li img {
+        width: 10%;
+        display: block;
+        margin: 0.5em auto 0
+    }
+    
+    .blockFooter ul li a:hover {
+        color: #607D8B;
+    }
+    
+}

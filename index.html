@@ -13,7 +13,7 @@
 
     <!--Cabeçalho do site-->
     <header>
-        <a href="index.html"><img src="img/logoPng2.png" alt="Logo Gymtri" width="75px"></a>
+        <a href="index.html"><img src="img/logoPng3.png" alt="Logo Gymtri" width="80px"></a>
 
         <!--Menu de navegação-->
         <nav id="menu">
@@ -27,6 +27,28 @@
                 <li><a href="login.html" class="navConfig">Login</a></li>
             </ul>
         </nav>
+
+        <!--Menu Hambúrguer/Checkbox oculto-->
+
+        <input type="checkbox" id="menuHamburguer">
+
+        <!--Icone do menu hambúrguer-->
+        <label for="menuHamburguer" class="menuBtn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+
+        <nav id="menuHamb">
+            <ul>
+                <li> <a href="/Produtos/indexprodutos.html" class="navConfig" target="_blank">Produtos</a></li>
+                <li><a href="#plansValueContainer" class="navConfig">Planos</a></li>
+                <li><a href="#blockAdvantage" class="navConfig">Vantagens</a></li>
+                <li><a href="index.html#mapContainer" class="navConfig">Academias</a></li>
+                <li><a href="login.html" class="navConfig">Login</a></li>
+            </ul>
+        </nav>
+
     </header>
 
     <!--Conteúdo Principal-->
@@ -40,6 +62,15 @@
 
             <section id="imgPresentation">
                 <img src="img/imgHome2.jpg" alt="Saúde e bem estar">
+            </section>
+        </section>
+
+        <!--Objetivo da Gymtri-->
+        <section id="gymtriInfo">
+            <section id="infoBlock" class="titleContainer">
+                <h2>Sobre a Gymtri</h2>
+                <p>Viemos com o objetivo de facilitar sua conexão com a vida fitness, trazendo uma plataforma que lhe
+                    dará o conforto e diversos benefícios que você precisa para mehorar sua qualidade de vida!</p>
             </section>
         </section>
 
@@ -73,6 +104,87 @@
                         atingir seus objetivos e bem-estar.</p>
                 </section>
 
+            </section>
+        </section>
+
+        <section id="offer320px">
+            <section id="offerGrid320px">
+                <section class="imgItem320px">
+                    <img src="img/academia.jpg" alt="Halter">
+                </section>
+                <section class="textItem320px">
+                    <h3>Academia</h3>
+                    <p>Aqui na Gymtri, você encontra a academia mais próxima de você!</p>
+                </section>
+
+                <section class="imgItem320px">
+                    <img src="img/personalTrainer.jpg" alt="Personal Trainer">
+                </section>
+                <section class="textItem320px">
+                    <h3>Personal Trainer</h3>
+                    <p>Contamos com serviço de personal trainer online, permitindo que você tenha um treino eficiente e
+                        adaptado às suas necessidades.</p>
+                </section>
+
+
+                <section class="imgItem320px">
+                    <img src="img/alimentos4.jpg" alt="Nutricionista">
+                </section>
+                <section class="textItem320px">
+                    <h3>Nutricionistas</h3>
+                    <p>Oferecemos consultas com nutricionistas, proporcionando orientação personalizada para você
+                        atingir seus objetivos e bem-estar.</p>
+                </section>
+
+            </section>
+        </section>
+
+        <!--Vantagens que a Gymtri oferece-->
+        <section id="blockAdvantage" class="titleContainer">
+            <h2>Vantagens</h2>
+            <section id="blockImg">
+                <img src="img/stopwatch2.png" alt="Tempo">
+                <img src="img/piggy-bank2.png" alt="Economia">
+                <img src="img/checked2.png" alt="Qualidade">
+            </section>
+
+            <section id="descripBlock">
+                <section id="blockAdv1" class="blockAdv">
+                    <h4 class="titleAdv">Não perca horas em filas</h4>
+                    <p>Sem filas, aproveite seu tempo com praticidade e eficiência.</p>
+                </section>
+                <section id="blockAdv2" class="blockAdv">
+                    <h4 class="titleAdv">Mais economia para você</h4>
+                    <p>Economia garantida, mantendo seu orçamento sob controle.</p>
+                </section>
+                <section id="blockAdv3" class="blockAdv">
+                    <h4 class="titleAdv">Profissionais certificados e qualificados</h4>
+                    <p>Atendimento especializado por profissionais confiáveis e experientes.</p>
+                </section>
+            </section>
+        </section>
+
+         <!--Vantagens que a Gymtri oferece 320px-->
+         <section id="blockAdvantage320px" class="titleContainer">
+            <h2>Vantagens</h2>
+            <section id="descripBlock320px">
+                <img class="blockImg320px" src="img/stopwatch2.png" alt="Tempo">
+                <section id="blockAdv1" class="blockAdv">
+                    <h4 class="titleAdv">Não perca horas em filas</h4>
+                    <p>Sem filas, aproveite seu tempo com praticidade e eficiência.</p>
+                </section>
+                <img class="blockImg320px" src="img/piggy-bank2.png" alt="Economia">
+                <section id="blockAdv2" class="blockAdv">
+                    <section>
+                        <h4 class="titleAdv">Mais economia para você</h4>
+                        <p>Economia garantida, mantendo seu orçamento sob controle.</p>
+                    </section>
+                </section>
+                <img class="blockImg320px" src="img/checked2.png" alt="Qualidade">
+                <section id="blockAdv3" class="blockAdv">
+                    <h4 class="titleAdv">Profissionais certificados e qualificados</h4>
+                    <p>Atendimento especializado por profissionais confiáveis e experientes.</p>
+                </section>
             </section>
         </section>
 
@@ -133,42 +245,9 @@
             </section>
         </section>
 
-        <!--Vantagens que a Gymtri oferece-->
-        <section id="blockAdvantage" class="titleContainer">
-            <h2>Vantagens</h2>
-            <section id="blockImg">
-                <img src="/img/stopwatch2.png" alt="Tempo">
-                <img src="img/piggy-bank2.png" alt="Economia">
-                <img src="img/checked2.png" alt="Qualidade">
-            </section>
-
-            <section id="descripBlock">
-                <section id="blockAdv1" class="blockAdv">
-                    <h4 class="titleAdv">Não perca horas em filas</h4>
-                    <p>Sem filas, aproveite seu tempo com praticidade e eficiência.</p>
-                </section>
-                <section id="blockAdv2" class="blockAdv">
-                    <h4 class="titleAdv">Mais economia para você</h4>
-                    <p>Economia garantida, mantendo seu orçamento sob controle.</p>
-                </section>
-                <section id="blockAdv3" class="blockAdv">
-                    <h4 class="titleAdv">Profissionais certificados e qualificados</h4>
-                    <p>Atendimento especializado por profissionais confiáveis e experientes.</p>
-                </section>
-            </section>
-        </section>
-
-        <!--Objetivo da Gymtri-->
-        <section id="gymtriInfo">
-            <section id="infoBlock" class="titleContainer">
-                <h2>Sobre a Gymtri</h2>
-                <p>Viemos com o objetivo de facilitar sua conexão com a vida fitness, trazendo uma plataforma que lhe
-                    dará o conforto e diversos benefícios que você precisa para mehorar sua qualidade de vida!</p>
-            </section>
-        </section>
 
         <!--Busque pela academia mais próxima-->
-        <section id="mapContainer" class="titleContainer">
+        <!-- <section id="mapContainer" class="titleContainer">
             <h2>Pesquise pela academia mais perto de você</h2>
             <section id="searchCEP">
                 <input type="text" name="cep" id="cep" placeholder="Digite seu CEP">
@@ -181,7 +260,7 @@
                     width="600" height="250" style="border:0;" allowfullscreen="" loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade"></iframe>
             </section>
-        </section>
+        </section> -->
     </main>
 
     <!--Rodapé do Site-->
@@ -189,7 +268,7 @@
 
         <!--Imagem centralizada do rodapé-->
         <section id="footerImg">
-            <img src="img/logoPng2.png" alt="">
+            <img src="img/logoPng3.png" alt="logo">
         </section>
 
         <hr>
@@ -218,8 +297,8 @@
             <section class="blockFooter">
                 <h3>Entre em contato</h3>
                 <ul>
-                    <li><img src="img/instagram2.png" alt="Instagram"><a href="#">@gymtri</a></li>
-                    <li><img src="img/tik-tok2.png" alt="Tiktok"><a href="#">@gymtri</a></li>
+                    <li class="linkConfig" ><img src="img/instagram2.png" alt="Instagram"><a href="#">@gymtri</a></li>
+                    <li class="linkConfig"><img src="img/tik-tok2.png" alt="Tiktok"><a href="#">@gymtri</a></li>
                     <li><img src="img/o-email2.png" alt="Email"><a href="#">gymtricontato@gmail.com</a></li>
                     <li><img src="img/telefone2.png" alt="Telefone"><a href="#">(11)99999-9999</a></li>
                 </ul>
