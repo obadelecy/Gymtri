@@ -81,3 +81,4 @@ imagensProdutos.forEach(imagem => {
     });
 });
 
+

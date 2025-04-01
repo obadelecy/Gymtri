@@ -11,8 +11,8 @@
 <body>
   <header>
 
-    <a href="/index.html"><img src="/img/logoPng.png" alt="Logo Gymtri" width="110px"></a>
-
+    <a href="/index.html"><img src="Imagens/logoimgtrans (1).png" alt="Logo Gymtri" width="110px"></a>
+    <button id="menu-toggle" class="menu-hamburguer">&#9776;</button>
     <nav id="menu">
       <ul>
         <li><a href="index.html#h1Plans" class="navConfig">PLANOS</a></li>
@@ -30,21 +30,30 @@
         </li>
       </ul>
     </nav>
- 
+    
+
   </header>
  
   <div class="carousel">
     <a href="https://www.madrugaosuplementos.com.br/" class="carousel-link">
-      <img src="Imagens/1.png" alt="Imagem 1" class="carousel-image">
+      <img src="Imagens/banner1.webp" alt="Imagem 1" class="carousel-image">
     </a>
     <a href="https://www.madrugaosuplementos.com.br/" class="carousel-link">
-      <img src="Imagens/2.png" alt="Imagem 2" class="carousel-image">
+      <img src="Imagens/banner 2.webp" alt="Imagem 2" class="carousel-image">
+    </a>
+    <!--
+    <a href="https://www.madrugaosuplementos.com.br/" class="carousel-link">
+      <img src="Imagens/1.png" alt="Imagem 3" class="carousel-image">
     </a>
     <a href="https://www.madrugaosuplementos.com.br/" class="carousel-link">
-      <img src="Imagens/3.png" alt="Imagem 3" class="carousel-image">
+      <img src="Imagens/2.png" alt="Imagem 4" class="carousel-image">
+    </a>
+    <a href="https://www.madrugaosuplementos.com.br/" class="carousel-link">
+      <img src="Imagens/3.png" alt="Imagem 5" class="carousel-image">
     </a>
     <button class="carousel-button prev" onclick="prevSlide()">&#10094;</button>
     <button class="carousel-button next" onclick="nextSlide()">&#10095;</button>
+    -->
   </div>
 
     <section class="product-grid">
@@ -182,6 +191,11 @@
   </section>
 
   <script src="scriptprodutos.js"></script>
+  <script>
+    document.getElementById("menu-toggle").addEventListener("click", function() {
+        document.getElementById("menu").classList.toggle("menu-aberto");
+    });
+</script>
 </body>
 
 </html>

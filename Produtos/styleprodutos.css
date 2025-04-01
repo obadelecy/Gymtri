@@ -6,7 +6,7 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #222020; 
+    background-color: #E0E0E0; 
     color: #fff; 
 }
 
@@ -50,7 +50,7 @@ nav {
     text-decoration: none;
     font-size: 20px;
     font-weight: 500;
-    color: #FFC83D;
+    color: #00bfae;
     transition: 0.3s;
 }
 
@@ -70,7 +70,7 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #FFC83D;
+    color: #00bfae;
     padding: 1.4em 2em;
     display: flex;
     font-size: 20px;
@@ -88,7 +88,7 @@ nav ul li a:hover {
     display: none;
     position: absolute;
     background-color: #252423;
-    border: 1px solid #FFC83D;
+    border: 1px solid #00bfae;
     min-width: 120px;
     width: 100%;
     top: 100%;
@@ -110,7 +110,7 @@ nav ul li:hover .subMenu {
 }
 
 .hrMenu {
-    border-color: #FFC83D;
+    border-color: #00bfae;
 }
 
 
@@ -119,7 +119,7 @@ nav ul li:hover .subMenu {
     font-family: "Montserrat", sans-serif;
     font-size: 20px;
     font-weight: 500;
-    color: #FFC83D;
+    color: #00bfae;
     transition: 0.3s;
 }
 
@@ -165,7 +165,7 @@ nav ul li:hover .subMenu {
 .buy-button {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #ffc83d; 
+    background-color: #00bfae; 
     color: #222020; 
     border-radius: 5px;
     text-decoration: none;
@@ -174,7 +174,7 @@ nav ul li:hover .subMenu {
 }
 
 .buy-button:hover {
-    background-color: #e6b036; 
+    background-color: #00bfae; 
 }
 
 /* Carrossel */
@@ -269,5 +269,60 @@ nav ul li:hover .subMenu {
 @media (max-width: 480px) {
     .product-grid {
         grid-template-columns: 1fr; 
+    }
+}
+
+/* Esconde o botão do menu hamburguer em telas grandes */
+.menu-hamburguer {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 30px;
+    color: #00bfae;
+    cursor: pointer;
+}
+
+/* Esconde o menu padrão em telas menores */
+@media screen and (max-width: 1024px) {
+    .menu-hamburguer {
+        display: block; /* Exibe o menu hamburguer */
+        position: absolute;
+        right: 20px;
+        top: 20px;
+    }
+
+    nav {
+        display: none;
+        flex-direction: column;
+        background-color: #252423;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        padding: 1em;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    nav ul li {
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    nav ul li a {
+        font-size: 18px;
+        padding: 10px 0;
+        display: block;
+    }
+
+    /* Mostra o menu ao clicar */
+    .menu-aberto {
+        display: flex;
     }
 }
