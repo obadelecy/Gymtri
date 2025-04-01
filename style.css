@@ -30,7 +30,7 @@ nav {
     margin-right: 15px;
 }
 
-.navConfig{
+.navConfig {
     text-decoration: none;
     font-size: 20px;
     font-weight: 500;
@@ -42,7 +42,7 @@ nav {
     padding: 1.4em 2em;
 }
 
-.navConfig:hover{
+.navConfig:hover {
     color: #607D8B;
     transition: 0.3s;
 }
@@ -57,7 +57,7 @@ nav ul {
     margin-right: 5em;
 }
 
-.subMenu{
+.subMenu {
     display: none;
     position: absolute;
     background-color: #00BFAE;
@@ -69,11 +69,11 @@ nav ul {
     left: 0;
 }
 
-nav ul li:hover .subMenu{
+nav ul li:hover .subMenu {
     display: block;
 }
 
-.subMenu li{
+.subMenu li {
     float: none;
 }
 
@@ -81,7 +81,7 @@ nav ul li:hover .subMenu{
     padding: 1.3em 0.8em;
     text-align: center;
     font-size: 16px;
-    
+
 }
 
 .hrMenu {
@@ -93,7 +93,7 @@ body {
 }
 
 
-#presentation{
+#presentation {
     background-color: #E0E0E0;
     padding: 6% 0 8%;
     display: grid;
@@ -107,7 +107,7 @@ body {
     border-radius: 0.4em;
 }
 
-#imgPresentation img{
+#imgPresentation img {
     width: 100%;
     border-radius: 0.4em;
 }
@@ -126,11 +126,11 @@ body {
     height: 1600px;
 }
 
-#offer320px{
+#offer320px {
     display: none;
 }
 
-.titleContainer h2{
+.titleContainer h2 {
     color: #00BFAE;
     text-align: center;
     padding-top: 1em;
@@ -147,18 +147,18 @@ body {
     gap: 10%;
 }
 
-.imgItem img{
+.imgItem img {
     width: 100%;
     border-radius: 5%;
 }
 
-.textItem h3{
+.textItem h3 {
     color: #00BFAE;
     font-size: 2.5em;
     margin-bottom: 5%;
 }
 
-.textItem{
+.textItem {
     color: #00BFAE;
     text-align: left;
     font-size: 1.4em;
@@ -169,7 +169,7 @@ body {
     transform: translateX(-100%);
 }
 
-.show{
+.show {
     opacity: 1;
     transition: all 1s;
     filter: blur(0);
@@ -192,7 +192,7 @@ body {
     padding-bottom: 8%;
 }
 
-.valueContainer{
+.valueContainer {
     background-color: #00BFAE;
     height: 550px;
     width: 260px;
@@ -209,22 +209,22 @@ body {
 
 #free {
     color: #FFFFFF;
-    
+
 }
 
-#freeText{
+#freeText {
     font-size: 2.2em;
     margin-bottom: 10%;
 }
 
-.textPlans{
+.textPlans {
     display: flex;
     flex-direction: column;
     align-items: center;
     color: #FFFFFF;
 }
 
-.textPlans li{
+.textPlans li {
     margin-bottom: 1em;
     width: 50%;
 }
@@ -243,14 +243,14 @@ body {
     text-align: center;
 }
 
-#blockValue p{ 
+#blockValue p {
     color: white;
     width: 35%;
     text-align: center;
     padding-bottom: 1em;
 }
 
-#btnPlans{
+#btnPlans {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -258,7 +258,7 @@ body {
     padding-bottom: 4em;
 }
 
-#btnPlans button{
+#btnPlans button {
     font-size: 1.4em;
     font-weight: bold;
     color: #FFFFFF;
@@ -274,16 +274,16 @@ body {
     cursor: pointer;
 }
 
-#blockAdvantage320px{
+#blockAdvantage320px {
     display: none;
 }
 
-#blockAdvantage{
+#blockAdvantage {
     background-color: #00BFAE;
     padding-bottom: 4em;
 }
 
-#blockAdvantage h2{
+#blockAdvantage h2 {
     color: #FFFFFF;
     text-align: center;
     padding-top: 1em;
@@ -320,7 +320,7 @@ body {
     margin-bottom: 1em;
 }
 
-.titleAdv{
+.titleAdv {
     text-align: center;
     margin-bottom: 0.8em;
     color: #FFFFFF;
@@ -333,12 +333,12 @@ body {
     font-size: 1.3em;
 }
 
-#gymtriInfo{
+#gymtriInfo {
     background-color: #00BFAE;
     padding-bottom: 4em;
 }
 
-#infoBlock h2{
+#infoBlock h2 {
     color: #FFFFFF;
 }
 
@@ -396,7 +396,7 @@ body {
 
 footer {
     background-color: #00BFAE;
-    height: auto; 
+    height: auto;
 }
 
 #footerImg {
@@ -412,55 +412,55 @@ footer {
     margin: 3em 0;
 }
 
-footer hr{
+footer hr {
     border-color: white;
     margin: 2em 5em;
 }
 
-#footerInfos{
+#footerInfos {
     background-color: #00BFAE;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
-.blockFooter{
+.blockFooter {
     width: 18%;
     margin: 2em 8em;
 }
 
-.blockFooter h3{
+.blockFooter h3 {
     color: #FFFFFF;
     margin-bottom: 3em;
 }
 
-.blockFooter li{
+.blockFooter li {
     display: flex;
     flex-direction: row;
     align-items: center;
     margin-bottom: 1.5em;
 }
 
-.blockFooter li a{
+.blockFooter li a {
     text-decoration: none;
     color: white;
 }
 
-.blockFooter ul li img{
+.blockFooter ul li img {
     width: 8%;
     margin-right: 0.5em;
 }
 
-.blockFooter ul li a:hover{
+.blockFooter ul li a:hover {
     color: #607D8B;
     transition: 0.3s;
 }
 
-#menuHamburguer{
+#menuHamburguer {
     display: none;
 }
 
-#menuHamb{
+#menuHamb {
     display: none;
 }
 
@@ -529,7 +529,7 @@ footer hr{
     }
 
     /* O menu será exibido quando o checkbox for marcado */
-    #menuHamburguer:checked + .menuBtn + #menuHamb {
+    #menuHamburguer:checked+.menuBtn+#menuHamb {
         left: 0 !important;
         display: block !important;
     }
@@ -552,17 +552,17 @@ footer hr{
         padding: 6% 0 8%;
         grid-template-columns: 100%;
     }
-    
-    #presentation section { 
+
+    #presentation section {
         margin-left: auto;
         margin-right: auto;
         width: 80%;
     }
-    
+
     #imgPresentation img {
         display: none;
     }
-    
+
     #text1 {
         font-size: 1.8em;
         padding: 1em 0.5em 1em;
@@ -573,24 +573,25 @@ footer hr{
         background-color: #00bfafc7;
         padding: 1em;
     }
-    
+
     #infoBlock h2 {
         color: #FFFFFF;
         font-size: 1.5em;
     }
-    
+
     #gymtriInfo p {
         width: auto;
         color: white;
         font-size: 1em;
         text-align: center;
     }
+
     /*Section Serviços oferecidos*/
     #offer {
         display: none;
     }
 
-    #offer320px{
+    #offer320px {
         display: block;
         padding: 5%;
         overflow: hidden;
@@ -599,7 +600,7 @@ footer hr{
     #offer320px section {
         height: auto;
     }
-    
+
     #offerGrid320px {
         width: 100%;
         max-width: 100vw;
@@ -608,34 +609,34 @@ footer hr{
         grid-template-columns: 100%;
         grid-template-rows: auto;
     }
-    
+
     .imgItem320px img {
         width: 100%;
         border-radius: 5%;
     }
-    
+
     .textItem320px h3 {
         font-size: 1.8em;
         color: #00BFAE;
         margin: 5% auto;
         text-align: center;
     }
-    
-    .textItem320px p{
+
+    .textItem320px p {
         font-size: 1em;
         color: #00BFAE;
         margin: 5% auto;
         padding: 1%;
-        
+
     }
 
-    .textItem320px{
+    .textItem320px {
         opacity: 0;
         filter: blur(10px);
         transition: all 1s;
         transform: translateX(-100%);
     }
-    
+
     .show {
         opacity: 1;
         transition: all 1s;
@@ -651,30 +652,30 @@ footer hr{
     #blockAdvantage320px {
         display: block;
     }
-    
+
     #blockAdvantage320px {
         background-color: #00BFAE;
     }
-    
+
     #blockAdvantage320px h2 {
         text-align: center;
         font-size: 2em;
         color: #FFFFFF;
     }
-    
+
     .blockImg320px {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
         margin-bottom: 1em;
     }
-    
+
     .blockImg320px {
         width: 85px;
         margin: 0 30%;
         padding-bottom: 1em;
     }
-    
+
     #descripBlock320px {
         padding: 0 10%;
         margin-bottom: 10%;
@@ -687,27 +688,27 @@ footer hr{
     .blockAdv {
         margin-bottom: 4em;
     }
-    
+
     .titleAdv {
         font-size: 1.5em;
     }
-    
+
     .blockAdv p {
         font-size: 1em;
     }
-    
+
     #blockValue {
         padding-bottom: 8%;
     }
 
-    .titleContainer h2{
+    .titleContainer h2 {
         font-size: 1.8em;
     }
-    
+
     .valueContainer {
         margin-bottom: 6em;
     }
-    
+
     .valueContainer:hover {
         box-shadow: 0px 0px 8px 1px #000000;
     }
@@ -720,17 +721,17 @@ footer hr{
     .textPlans li {
         width: 50%;
     }
-    
+
     .valueContainer h4 {
         font-size: 1.8em;
         margin-bottom: 1em;
     }
-    
+
     .valuePlans {
         font-size: 2.4em;
         text-align: center;
     }
-    
+
     #blockValue p {
         color: white;
         text-align: center;
@@ -743,65 +744,65 @@ footer hr{
         background-color: #00BFAE;
         height: auto;
     }
-    
+
     #footerImg {
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: center;
     }
-    
+
     #footerImg img {
         width: 50%;
         display: flex;
     }
-    
+
     footer hr {
         border-color: white;
         margin: 1em 2em;
     }
-    
+
     #footerInfos {
         display: block;
         background-color: #00BFAE;
     }
-    
+
     .blockFooter {
         margin: 2em 2em;
         width: 80%;
     }
-    
+
     .blockFooter h3 {
         font-size: 1.5em;
         color: #FFFFFF;
         text-align: center;
         margin-bottom: 1em;
     }
-    
+
     .blockFooter li {
         display: block;
         text-align: center;
         margin-bottom: 0.8em;
     }
-    
+
     .blockFooter li a {
         color: #FFFFFF;
         text-decoration: none;
     }
-    
+
     .blockFooter ul li img {
         width: 8%;
         display: block;
         margin: 0.5em auto 0
     }
-    
+
     .blockFooter ul li a:hover {
         color: #607D8B;
     }
-    
+
 }
 
-@media (min-width: 320px) and (max-width: 375px){
+@media (min-width: 320px) and (max-width: 375px) {
     * {
         overflow-x: hidden;
     }
@@ -865,7 +866,7 @@ footer hr{
     }
 
     /* O menu será exibido quando o checkbox for marcado */
-    #menuHamburguer:checked + .menuBtn + #menuHamb {
+    #menuHamburguer:checked+.menuBtn+#menuHamb {
         left: 0 !important;
         display: block !important;
     }
@@ -888,17 +889,17 @@ footer hr{
         padding: 6% 0 8%;
         grid-template-columns: 100%;
     }
-    
-    #presentation section { 
+
+    #presentation section {
         margin-left: auto;
         margin-right: auto;
         width: 80%;
     }
-    
+
     #imgPresentation img {
         display: none;
     }
-    
+
     #text1 {
         font-size: 1.8em;
         padding: 1em 0.5em 1em;
@@ -909,24 +910,25 @@ footer hr{
         background-color: #00bfafc7;
         padding: 1em;
     }
-    
+
     #infoBlock h2 {
         color: #FFFFFF;
         font-size: 1.5em;
     }
-    
+
     #gymtriInfo p {
         width: auto;
         color: white;
         font-size: 1em;
         text-align: center;
     }
+
     /*Section Serviços oferecidos*/
     #offer {
         display: none;
     }
 
-    #offer320px{
+    #offer320px {
         display: block;
         padding: 5%;
         overflow: hidden;
@@ -935,7 +937,7 @@ footer hr{
     #offer320px section {
         height: auto;
     }
-    
+
     #offerGrid320px {
         width: 100%;
         max-width: 100vw;
@@ -944,33 +946,33 @@ footer hr{
         grid-template-columns: 100%;
         grid-template-rows: auto;
     }
-    
+
     .imgItem320px img {
         width: 100%;
         border-radius: 5%;
     }
-    
+
     .textItem320px h3 {
         font-size: 1.8em;
         color: #00BFAE;
         margin: 5% auto;
         text-align: center;
     }
-    
-    .textItem320px p{
+
+    .textItem320px p {
         font-size: 1em;
         color: #00BFAE;
         margin: 5% 12%;
         padding: 1%;
     }
 
-    .textItem320px{
+    .textItem320px {
         opacity: 0;
         filter: blur(10px);
         transition: all 1s;
         transform: translateX(-100%);
     }
-    
+
     .show {
         opacity: 1;
         transition: all 1s;
@@ -986,17 +988,17 @@ footer hr{
     #blockAdvantage320px {
         display: block;
     }
-    
+
     #blockAdvantage320px {
         background-color: #00BFAE;
     }
-    
+
     #blockAdvantage320px h2 {
         text-align: center;
         font-size: 2em;
         color: #FFFFFF;
     }
-    
+
     .blockImg320px {
         display: flex;
         flex-direction: row;
@@ -1006,7 +1008,7 @@ footer hr{
         margin: 0 auto;
         padding-bottom: 1em;
     }
-    
+
     #descripBlock320px {
         padding: 0 10%;
         margin-bottom: 10%;
@@ -1019,27 +1021,27 @@ footer hr{
     .blockAdv {
         margin: 0 auto 2em;
     }
-    
+
     .titleAdv {
         font-size: 1.5em;
     }
-    
+
     .blockAdv p {
         font-size: 1em;
     }
-    
+
     #blockValue {
         padding-bottom: 8%;
     }
 
-    .titleContainer h2{
+    .titleContainer h2 {
         font-size: 1.8em;
     }
-    
+
     .valueContainer {
         margin-bottom: 6em;
     }
-    
+
     .valueContainer:hover {
         box-shadow: 0px 0px 8px 1px #000000;
     }
@@ -1052,17 +1054,17 @@ footer hr{
     .textPlans li {
         width: 50%;
     }
-    
+
     .valueContainer h4 {
         font-size: 1.8em;
         margin-bottom: 1em;
     }
-    
+
     .valuePlans {
         font-size: 2.4em;
         text-align: center;
     }
-    
+
     #blockValue p {
         color: white;
         text-align: center;
@@ -1075,66 +1077,66 @@ footer hr{
         background-color: #00BFAE;
         height: auto;
     }
-    
+
     #footerImg {
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: center;
     }
-    
+
     #footerImg img {
         margin: 0 auto;
         width: 50%;
         display: flex;
     }
-    
+
     footer hr {
         border-color: white;
         margin: 1em 2em;
     }
-    
+
     #footerInfos {
         display: block;
         background-color: #00BFAE;
     }
-    
+
     .blockFooter {
         margin: 2em 2em;
         width: 80%;
     }
-    
+
     .blockFooter h3 {
         font-size: 1.5em;
         color: #FFFFFF;
         text-align: center;
         margin-bottom: 1em;
     }
-    
+
     .blockFooter li {
         display: block;
         text-align: center;
         margin-bottom: 0.8em;
     }
-    
+
     .blockFooter li a {
         color: #FFFFFF;
         text-decoration: none;
     }
-    
+
     .blockFooter ul li img {
         width: 8%;
         display: block;
         margin: 0.5em auto 0
     }
-    
+
     .blockFooter ul li a:hover {
         color: #607D8B;
     }
-    
+
 }
 
-@media (min-width: 375px) and (max-width: 425px){
+@media (min-width: 375px) and (max-width: 425px) {
     * {
         overflow-x: hidden;
     }
@@ -1198,7 +1200,7 @@ footer hr{
     }
 
     /* O menu será exibido quando o checkbox for marcado */
-    #menuHamburguer:checked + .menuBtn + #menuHamb {
+    #menuHamburguer:checked+.menuBtn+#menuHamb {
         left: 0 !important;
         display: block !important;
     }
@@ -1221,17 +1223,17 @@ footer hr{
         padding: 6% 0 8%;
         grid-template-columns: 100%;
     }
-    
-    #presentation section { 
+
+    #presentation section {
         margin-left: auto;
         margin-right: auto;
         width: 80%;
     }
-    
+
     #imgPresentation img {
         display: none;
     }
-    
+
     #text1 {
         font-size: 1.8em;
         padding: 1em 0.5em 1em;
@@ -1242,24 +1244,25 @@ footer hr{
         background-color: #00bfafc7;
         padding: 1em;
     }
-    
+
     #infoBlock h2 {
         color: #FFFFFF;
         font-size: 1.5em;
     }
-    
+
     #gymtriInfo p {
         width: auto;
         color: white;
         font-size: 1em;
         text-align: center;
     }
+
     /*Section Serviços oferecidos*/
     #offer {
         display: none;
     }
 
-    #offer320px{
+    #offer320px {
         display: block;
         padding: 5%;
         overflow: hidden;
@@ -1268,7 +1271,7 @@ footer hr{
     #offer320px section {
         height: auto;
     }
-    
+
     #offerGrid320px {
         width: 100%;
         max-width: 100vw;
@@ -1277,33 +1280,33 @@ footer hr{
         grid-template-columns: 100%;
         grid-template-rows: auto;
     }
-    
+
     .imgItem320px img {
         width: 100%;
         border-radius: 5%;
     }
-    
+
     .textItem320px h3 {
         font-size: 1.8em;
         color: #00BFAE;
         margin: 5% auto;
         text-align: center;
     }
-    
-    .textItem320px p{
+
+    .textItem320px p {
         font-size: 1em;
         color: #00BFAE;
         margin: 5% 12%;
         padding: 1%;
     }
 
-    .textItem320px{
+    .textItem320px {
         opacity: 0;
         filter: blur(10px);
         transition: all 1s;
         transform: translateX(-100%);
     }
-    
+
     .show {
         opacity: 1;
         transition: all 1s;
@@ -1319,17 +1322,17 @@ footer hr{
     #blockAdvantage320px {
         display: block;
     }
-    
+
     #blockAdvantage320px {
         background-color: #00BFAE;
     }
-    
+
     #blockAdvantage320px h2 {
         text-align: center;
         font-size: 2em;
         color: #FFFFFF;
     }
-    
+
     .blockImg320px {
         display: flex;
         flex-direction: row;
@@ -1339,7 +1342,7 @@ footer hr{
         margin: 0 auto;
         padding-bottom: 1em;
     }
-    
+
     #descripBlock320px {
         padding: 0 10%;
         margin-bottom: 10%;
@@ -1352,28 +1355,28 @@ footer hr{
     .blockAdv {
         margin: 0 auto 4em;
     }
-    
+
     .titleAdv {
         font-size: 1.5em;
     }
-    
+
     .blockAdv p {
         font-size: 1em;
     }
-    
+
     #blockValue {
         padding-bottom: 8%;
     }
 
-    .titleContainer h2{
+    .titleContainer h2 {
         font-size: 1.8em;
         padding: 1em;
     }
-    
+
     .valueContainer {
         margin-bottom: 6em;
     }
-    
+
     .valueContainer:hover {
         box-shadow: 0px 0px 8px 1px #000000;
     }
@@ -1386,17 +1389,17 @@ footer hr{
     .textPlans li {
         width: 50%;
     }
-    
+
     .valueContainer h4 {
         font-size: 1.8em;
         margin-bottom: 1em;
     }
-    
+
     .valuePlans {
         font-size: 2.4em;
         text-align: center;
     }
-    
+
     #blockValue p {
         color: white;
         text-align: center;
@@ -1409,66 +1412,66 @@ footer hr{
         background-color: #00BFAE;
         height: auto;
     }
-    
+
     #footerImg {
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: center;
     }
-    
+
     #footerImg img {
         margin: 0 auto;
         width: 50%;
         display: flex;
     }
-    
+
     footer hr {
         border-color: white;
         margin: 1em 2em;
     }
-    
+
     #footerInfos {
         display: block;
         background-color: #00BFAE;
     }
-    
+
     .blockFooter {
         margin: 2em 2em;
         width: 85%;
     }
-    
+
     .blockFooter h3 {
         font-size: 1.5em;
         color: #FFFFFF;
         text-align: center;
         margin-bottom: 1em;
     }
-    
+
     .blockFooter li {
         display: block;
         text-align: center;
         margin-bottom: 0.8em;
     }
-    
+
     .blockFooter li a {
         color: #FFFFFF;
         text-decoration: none;
     }
-    
+
     .blockFooter ul li img {
         width: 8%;
         display: block;
         margin: 0.5em auto 0
     }
-    
+
     .blockFooter ul li a:hover {
         color: #607D8B;
     }
-    
+
 }
 
-@media (min-width: 425px) and (max-width: 768px){
+@media (min-width: 425px) and (max-width: 768px) {
     * {
         overflow-x: hidden;
     }
@@ -1532,7 +1535,7 @@ footer hr{
     }
 
     /* O menu será exibido quando o checkbox for marcado */
-    #menuHamburguer:checked + .menuBtn + #menuHamb {
+    #menuHamburguer:checked+.menuBtn+#menuHamb {
         left: 0 !important;
         display: block !important;
     }
@@ -1549,23 +1552,23 @@ footer hr{
     #menuHamburguer:checked+.menuBtn span:nth-child(3) {
         transform: rotate(-45deg) translate(11px, -11px);
     }
-    
+
     /*Section Inicio da página (Apresentação)*/
     #presentation {
         padding: 6% 0 8%;
         grid-template-columns: 100%;
     }
-    
-    #presentation section { 
+
+    #presentation section {
         margin-left: auto;
         margin-right: auto;
         width: 80%;
     }
-    
+
     #imgPresentation img {
         display: none;
     }
-    
+
     #text1 {
         font-size: 2em;
         padding: 1em 0.5em 1em;
@@ -1576,25 +1579,26 @@ footer hr{
         background-color: #00bfafc7;
         padding: 1em 1em;
     }
-    
+
     #infoBlock h2 {
         color: #FFFFFF;
         font-size: 2em;
         margin-bottom: 2%;
     }
-    
+
     #gymtriInfo p {
         width: auto;
         color: white;
         font-size: 1.2em;
         text-align: center;
     }
+
     /*Section Serviços oferecidos*/
     #offer {
         display: none;
     }
 
-    #offer320px{
+    #offer320px {
         display: block;
         padding: 5%;
         overflow: hidden;
@@ -1603,7 +1607,7 @@ footer hr{
     #offer320px section {
         height: auto;
     }
-    
+
     #offerGrid320px {
         width: 100%;
         max-width: 100vw;
@@ -1612,20 +1616,20 @@ footer hr{
         grid-template-columns: 100%;
         grid-template-rows: auto;
     }
-    
+
     .imgItem320px img {
         width: 100%;
         border-radius: 5%;
     }
-    
+
     .textItem320px h3 {
         font-size: 2em;
         color: #00BFAE;
         margin: 5% auto;
         text-align: center;
     }
-    
-    .textItem320px p{
+
+    .textItem320px p {
         font-size: 1.2em;
         color: #00BFAE;
         text-align: center;
@@ -1633,13 +1637,13 @@ footer hr{
         padding: 1%;
     }
 
-    .textItem320px{
+    .textItem320px {
         opacity: 0;
         filter: blur(10px);
         transition: all 1s;
         transform: translateX(-100%);
     }
-    
+
     .show {
         opacity: 1;
         transition: all 1s;
@@ -1655,17 +1659,17 @@ footer hr{
     #blockAdvantage320px {
         display: block;
     }
-    
+
     #blockAdvantage320px {
         background-color: #00BFAE;
     }
-    
+
     #blockAdvantage320px h2 {
         text-align: center;
         font-size: 2em;
         color: #FFFFFF;
     }
-    
+
     .blockImg320px {
         display: flex;
         flex-direction: row;
@@ -1675,7 +1679,7 @@ footer hr{
         margin: 0 auto;
         padding-bottom: 1em;
     }
-    
+
     #descripBlock320px {
         padding: 0 15%;
         margin-bottom: 10%;
@@ -1691,30 +1695,30 @@ footer hr{
 
         height: 350px;
     }
-    
+
     .titleAdv {
         font-size: 2em;
     }
-    
+
     .blockAdv p {
         font-size: 1.2em;
     }
-    
+
     #blockValue {
         padding-bottom: 8%;
     }
 
-    .titleContainer h2{
+    .titleContainer h2 {
         font-size: 2em;
         padding: 1em;
     }
-    
+
     .valueContainer {
         margin-bottom: 6em;
         height: 670px;
         width: 300px;
     }
-    
+
     .valueContainer:hover {
         box-shadow: 0px 0px 8px 1px #000000;
     }
@@ -1728,25 +1732,25 @@ footer hr{
         width: 50%;
         font-size: 1.2em;
     }
-    
+
     .valueContainer h4 {
         font-size: 2em;
         margin-bottom: 1em;
     }
-    
+
     .valuePlans {
         font-size: 2em;
         text-align: center;
     }
-    
+
     #blockValue p {
         color: white;
         text-align: center;
         padding-bottom: 3em;
-        font-size: 1.6em;
+        font-size: 1.4em;
     }
-    
-    #btnPlans button{
+
+    #btnPlans button {
         font-size: 1.6em;
     }
 
@@ -1756,67 +1760,67 @@ footer hr{
         background-color: #00BFAE;
         height: auto;
     }
-    
+
     #footerImg {
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: center;
     }
-    
+
     #footerImg img {
         margin: 0 auto;
         width: 50%;
         display: flex;
     }
-    
+
     footer hr {
         border-color: white;
         margin: 1em 2em;
     }
-    
+
     #footerInfos {
         display: block;
         background-color: #00BFAE;
     }
-    
+
     .blockFooter {
         margin: 3em 3em;
         width: 80%;
     }
-    
+
     .blockFooter h3 {
         font-size: 2em;
         color: #FFFFFF;
         text-align: center;
         margin-bottom: 1em;
     }
-    
+
     .blockFooter li {
         display: block;
         text-align: center;
         margin-bottom: 0.8em;
     }
-    
+
     .blockFooter li a {
         color: #FFFFFF;
         text-decoration: none;
         font-size: 1.2em;
     }
-    
+
     .blockFooter ul li img {
         width: 10%;
         display: block;
         margin: 0.5em auto 0
     }
-    
+
     .blockFooter ul li a:hover {
         color: #607D8B;
     }
-    
+
 }
 
-@media (min-width: 768px) and (max-width: 1024px){
+@media (min-width: 769px) and (max-width: 899px) {
     * {
         overflow-x: hidden;
     }
@@ -1826,55 +1830,101 @@ footer hr{
     }
 
     header img {
-        width: 100px;
-    } 
+        width: 75px;
+    }
 
-    /*Section Inicio da página (Apresentação)*/
-    #presentation {
-        padding: 10% 20%;
-        grid-template-columns: 100%;
+    #menu {
+        display: block;
+    }
+
+    nav {
+        margin-right: 5px;
     }
     
-    #presentation section { 
+    .navConfig {
+        font-size: 1em;
+        padding: 1.4em 1.6em;
+    }
+    
+    nav ul {
+        margin-right: 1em;
+    }
+    
+    /*Section Inicio da página (Apresentação)*/
+    #presentation {
+        padding: 10% 4%;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: auto;
+    }
+
+    #presentation section {
         margin-left: auto;
         margin-right: auto;
         width: 100%;
     }
 
-    #imgPresentation img{
-        display: none;
+    #imgPresentation img {
+        display: block;
+        max-width: 100%;
     }
-    
+
     #text1 {
-        font-size: 2.4em;
-        padding: 0 0.8em 1em;
+        font-size: 2.2em;
+        padding: 0em 0.8em 1em;
     }
 
     /*Section Sobre*/
-    #gymtriInfo {
-        background-color: #00bfafc7;
-        padding: 1em 1em;
-    }
-    
     #infoBlock h2 {
-        color: #FFFFFF;
-        font-size: 3em;
-        margin-bottom: 1%;
+        font-size: 1.8em;
     }
-    
+
     #gymtriInfo p {
         width: auto;
         color: white;
-        font-size: 2em;
-        text-align: center;
+        font-size: 1.2em;
+        padding: 0 1em;
     }
+
     /*Section Serviços oferecidos*/
 
-    #offer320px{
+    #offer {
         display: block;
+        height: auto;
+        padding: 2%;
     }
 
-    
+    #offerGrid {
+        padding: 2% 8% 0;
+        width: auto;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: auto;
+    }
+
+    .titleContainer h2 {
+        font-size: 1em;
+        margin-bottom: 1.3em;
+    }
+
+    .imgItem img {
+        max-width: 100%;
+        max-height: 100%;
+        background-size: contain;
+        object-fit: cover;
+    }
+
+    .textItem h3 {
+        font-size: 1.8em;
+    }
+
+    .textItem {
+        font-size: 1em;
+    }
+
+    #offer320px {
+        display: none;
+    }
+
     .show {
         opacity: 1;
         transition: all 1s;
@@ -1883,178 +1933,836 @@ footer hr{
     }
 
     /*Section vantagens*/
-    #blockAdvantage {
+
+    #blockAdvantage320px {
         display: none;
     }
 
-    #blockAdvantage320px {
+    #blockAdvantage {
         display: block;
     }
-    
-    #blockAdvantage320px {
-        background-color: #00BFAE;
+
+    #blockAdvantage h2 {
+        font-size: 2em;
+        margin-bottom: 1.3em;
     }
     
-    #blockAdvantage320px h2 {
-        text-align: center;
-        font-size: 2.8em;
-        color: #FFFFFF;
+    #blockImg img {
+        width: 70px;
     }
-    
-    .blockImg320px {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        margin-bottom: 1em;
-        width: 110px;
-        margin: 0 auto;
-        padding-bottom: 1em;
+
+    .blockAdv {
+        margin: 0 1em 4em;
+        padding: 1em;
+        width: 300px;
+        height: 280px;
     }
-    
-    #descripBlock320px {
-        padding: 0 15%;
-        margin-bottom: 10%;
-        display: grid;
-        grid-template-columns: 100%;
-        grid-template-rows: auto;
+
+    .titleAdv {
+        font-size: 1.4em;
+    }
+
+    .blockAdv p {
+        font-size: 1.2em;
     }
 
     /*Section Planos*/
-    .blockAdv {
-        margin: 0 auto 4em;
-        padding: 1em;
-        width: 400px;
-        height: 350px;
-    }
-    
-    .titleAdv {
-        font-size: 2em;
-    }
-    
-    .blockAdv p {
-        font-size: 1.9em;
-    }
-    
+
     #blockValue {
-        padding-bottom: 8%;
+        padding-bottom: 10%;
     }
 
-    .titleContainer h2{
-        font-size: 2.8em;
+    .titleContainer h2 {
+        font-size: 2em;
         padding: 1em;
     }
-    
+
     .valueContainer {
-        margin-bottom: 6em;
-        height: 900px;
-        width: 400px;
-    }
-    
-    .valueContainer:hover {
-        box-shadow: 0px 0px 8px 1px #000000;
+        height: 650px;
+        width: 300px;
+        margin-bottom: 10%;
     }
 
     #freeText {
-        font-size: 1.9em;
-        margin-bottom: 1em;
-    }
-
-    .textPlans li {
-        width: 50%;
-        font-size: 1.8em;
-    }
-    
-    .valueContainer h4 {
-        font-size: 2.4em;
-        margin-bottom: 1em;
-    }
-    
-    .valuePlans {
-        font-size: 2.6em;
-        text-align: center;
-    }
-    
-    #blockValue p {
-        color: white;
-        text-align: center;
-        padding-bottom: 3em;
         font-size: 1.6em;
     }
 
-    #btnPlans{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        padding-bottom: 4em;
+    .textPlans li{
+        font-size: 1.2em;
     }
-    
-    #btnPlans button{
-        font-size: 2.4em;
+
+    .valueContainer h4 {
+        font-size: 2em;
+    }
+
+    .valuePlans {
+        font-size: 2em;
+    }
+
+    #blockValue p {
+        font-size: 1.2em;
+    }
+
+    #btnPlans button {
+        font-size: 1.6em;
     }
 
     /*Footer*/
 
     footer {
-        background-color: #00BFAE;
         height: auto;
     }
-    
-    #footerImg {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-    }
-    
+
     #footerImg img {
         margin: 0 auto;
-        width: 50%;
-        display: flex;
+        width: 30%;
     }
-    
+
     footer hr {
         border-color: white;
         margin: 1em 2em;
     }
-    
+
     #footerInfos {
-        display: block;
-        background-color: #00BFAE;
+        display: flex;
     }
-    
+
     .blockFooter {
-        margin: 3em 3em;
-        width: 85%;
+        margin: 3em 1em;
+        width: 80%;
     }
-    
+
     .blockFooter h3 {
-        font-size: 2em;
-        color: #FFFFFF;
+        font-size: 1.4em;
         text-align: center;
         margin-bottom: 1em;
     }
-    
+
     .blockFooter li {
         display: block;
         text-align: center;
         margin-bottom: 0.8em;
     }
-    
+
     .blockFooter li a {
         color: #FFFFFF;
         text-decoration: none;
-        font-size: 1.6em;
+        font-size: 1em;
     }
-    
+
     .blockFooter ul li img {
         width: 10%;
         display: block;
         margin: 0.5em auto 0
     }
-    
-    .blockFooter ul li a:hover {
-        color: #607D8B;
+}
+
+@media (min-width: 900px) and (max-width: 1097px) {
+    * {
+        overflow-x: hidden;
+    }
+
+    header {
+        padding: 5px;
+    }
+
+    header img {
+        width: 75px;
+    }
+
+    #menu {
+        display: block;
+    }
+
+    nav {
+        margin-right: 5px;
     }
     
+    .navConfig {
+        font-size: 1em;
+        padding: 1.4em 1.6em;
+    }
+    
+    nav ul {
+        margin-right: 1em;
+    }
+    
+    /*Section Inicio da página (Apresentação)*/
+    #presentation {
+        padding: 10% 4%;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: auto;
+    }
+
+    #presentation section {
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    }
+
+    #imgPresentation img {
+        display: block;
+        max-width: 100%;
+    }
+
+    #text1 {
+        font-size: 2.2em;
+        padding: 0em 0.8em 1em;
+    }
+
+    /*Section Sobre*/
+    #infoBlock h2 {
+        font-size: 1.8em;
+    }
+
+    #gymtriInfo p {
+        width: auto;
+        color: white;
+        font-size: 1.2em;
+        padding: 0 1em;
+    }
+
+    /*Section Serviços oferecidos*/
+
+    #offer {
+        display: block;
+        height: auto;
+        padding: 2%; 
+    }
+
+    #offerGrid {
+        padding: 2% 8% 0;
+        width: auto;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: auto;
+    }
+
+    .titleContainer h2 {
+        font-size: 1em;
+        margin-bottom: 1.3em;
+    }
+
+    .imgItem img {
+        max-width: 100%;
+        max-height: 100%;
+        background-size: contain;
+        object-fit: cover;
+    }
+
+    .textItem h3 {
+        font-size: 1.8em;
+    }
+
+    .textItem {
+        font-size: 1em;
+    }
+
+    #offer320px {
+        display: none;
+    }
+
+    .show {
+        opacity: 1;
+        transition: all 1s;
+        filter: blur(0);
+        transform: translateX(0);
+    }
+
+    /*Section vantagens*/
+
+    #blockAdvantage320px {
+        display: none;
+    }
+
+    #blockAdvantage {
+        display: block;
+    }
+
+    #blockAdvantage h2 {
+        font-size: 2em;
+        margin-bottom: 1.3em;
+    }
+    
+    #blockImg img {
+        width: 70px;
+    }
+
+    .blockAdv {
+        margin: 0 1em 4em;
+        padding: 1em;
+        width: 300px;
+        height: 280px;
+    }
+
+    .titleAdv {
+        font-size: 1.4em;
+    }
+
+    .blockAdv p {
+        font-size: 1.2em;
+    }
+
+    /*Section Planos*/
+
+    #blockValue {
+        padding-bottom: 10%;
+    }
+
+    .titleContainer h2 {
+        font-size: 2em;
+        padding: 1em;
+    }
+
+    .valueContainer {
+        height: 650px;
+        width: 300px;
+        margin: 5% 3%;
+    }
+
+    #freeText {
+        font-size: 1.6em;
+    }
+
+    .textPlans li{
+        font-size: 1.2em;
+    }
+
+    .valueContainer h4 {
+        font-size: 2em;
+    }
+
+    .valuePlans {
+        font-size: 2em;
+    }
+
+    #blockValue p {
+        font-size: 1.2em;
+    }
+
+    #btnPlans button {
+        font-size: 1.6em;
+    }
+
+    /*Footer*/
+
+    footer {
+        height: auto;
+    }
+
+    #footerImg img {
+        margin: 0 auto;
+        width: 20%;
+    }
+
+    footer hr {
+        border-color: white;
+        margin: 1em 2em;
+    }
+
+    #footerInfos {
+        display: flex;
+    }
+
+    .blockFooter {
+        margin: 3em 1em;
+        width: 80%;
+    }
+
+    .blockFooter h3 {
+        font-size: 1.4em;
+        text-align: center;
+        margin-bottom: 1em;
+    }
+
+    .blockFooter li {
+        display: block;
+        text-align: center;
+        margin-bottom: 0.8em;
+    }
+
+    .blockFooter li a {
+        color: #FFFFFF;
+        text-decoration: none;
+        font-size: 1em;
+    }
+
+    .blockFooter ul li img {
+        width: 10%;
+        display: block;
+        margin: 0.5em auto 0
+    }
 }
+
+@media (min-width: 1098px) and (max-width: 1184px) {
+    * {
+        overflow-x: hidden;
+    }
+
+    header {
+        padding: 5px;
+    }
+
+    header img {
+        width: 75px;
+    }
+
+    #menu {
+        display: block;
+    }
+
+    nav {
+        margin-right: 5px;
+    }
+    
+    .navConfig {
+        font-size: 1em;
+        padding: 1.4em 1.6em;
+    }
+    
+    nav ul {
+        margin-right: 1em;
+    }
+    
+    /*Section Inicio da página (Apresentação)*/
+    #presentation {
+        padding: 10% 4%;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: auto;
+    }
+
+    #presentation section {
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    }
+
+    #imgPresentation img {
+        display: block;
+        max-width: 100%;
+    }
+
+    #text1 {
+        font-size: 2.2em;
+        padding: 0em 0.8em 1em;
+    }
+
+    /*Section Sobre*/
+    #infoBlock h2 {
+        font-size: 1.8em;
+    }
+
+    #gymtriInfo p {
+        width: auto;
+        color: white;
+        font-size: 1.2em;
+        padding: 0 1em;
+    }
+
+    /*Section Serviços oferecidos*/
+
+    #offer {
+        display: block;
+        height: 1100px;
+        padding: 2%;
+    }
+
+    #offerGrid {
+        padding: 2% 8% 0;
+        width: auto;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: auto;
+    }
+
+    .imgItem img {
+        max-width: 100%;
+        max-height: 100%;
+        background-size: contain;
+        object-fit: cover;
+    }
+
+    .textItem h3 {
+        font-size: 2.6em;
+    }
+
+    .textItem {
+        font-size: 1.2em;
+        width: 100%;
+    }
+
+    #offer320px {
+        display: none;
+    }
+
+    .show {
+        opacity: 1;
+        transition: all 1s;
+        filter: blur(0);
+        transform: translateX(0);
+    }
+
+    /*Section vantagens*/
+
+    #blockAdvantage320px {
+        display: none;
+    }
+
+    #blockAdvantage {
+        display: block;
+    }
+
+    #blockAdvantage h2 {
+        font-size: 2em;
+        margin-bottom: 1.3em;
+    }
+    
+    #blockImg img {
+        width: 70px;
+    }
+
+    .blockAdv {
+        margin: 0 1em 4em;
+        padding: 1em;
+        width: 300px;
+        height: 280px;
+    }
+
+    .titleAdv {
+        font-size: 1.4em;
+    }
+
+    .blockAdv p {
+        font-size: 1.2em;
+    }
+
+    /*Section Planos*/
+
+    #blockValue {
+        padding-bottom: 10%;
+    }
+
+    .titleContainer h2 {
+        font-size: 2em;
+        padding: 1em;
+    }
+
+    .valueContainer {
+        height: 650px;
+        width: 300px;
+        margin: 5% 4%;
+    }
+
+    #freeText {
+        font-size: 1.6em;
+    }
+
+    .textPlans li{
+        font-size: 1.2em;
+    }
+
+    .valueContainer h4 {
+        font-size: 2em;
+    }
+
+    .valuePlans {
+        font-size: 2em;
+    }
+
+    #blockValue p {
+        font-size: 1.2em;
+    }
+
+    #btnPlans button {
+        font-size: 1.6em;
+    }
+
+    /*Footer*/
+
+    footer {
+        height: auto;
+    }
+
+    #footerImg img {
+        margin: 0 auto;
+        width: 20%;
+    }
+
+    footer hr {
+        border-color: white;
+        margin: 1em 2em;
+    }
+
+    #footerInfos {
+        display: flex;
+    }
+
+    .blockFooter {
+        margin: 3em 1em;
+        width: 80%;
+    }
+
+    .blockFooter h3 {
+        font-size: 1.4em;
+        text-align: center;
+        margin-bottom: 1em;
+    }
+
+    .blockFooter li {
+        display: block;
+        text-align: center;
+        margin-bottom: 0.8em;
+    }
+
+    .blockFooter li a {
+        color: #FFFFFF;
+        text-decoration: none;
+        font-size: 1em;
+    }
+
+    .blockFooter ul li img {
+        width: 10%;
+        display: block;
+        margin: 0.5em auto 0
+    }
+}
+
+@media (min-width: 1185px) and (max-width: 1380px) {
+    #offer {
+        display: block;
+        height: 1500px;
+        padding: 2%;
+    }
+}
+
+@media (min-width: 1440px) and (max-width: 4000px) {
+    * {
+        overflow-x: hidden;
+    }
+
+    header {
+        padding: 5px;
+    }
+
+    header img {
+        width: 90px;
+    }
+
+    #menu {
+        display: block;
+    }
+
+    nav {
+        margin-right: 5px;
+    }
+    
+    .navConfig {
+        font-size: 1.4em;
+        padding: 1.4em 1.6em;
+    }
+    
+    nav ul {
+        margin-right: 1em;
+    }
+    
+    /*Section Inicio da página (Apresentação)*/
+    #presentation {
+        padding: 10% 4%;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: auto;
+    }
+
+    #presentation section {
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    }
+
+    #imgPresentation img {
+        display: block;
+        max-width: 100%;
+    }
+
+    #text1 {
+        font-size: 3.4em;
+        padding: 1em 0.8em 1em;
+    }
+
+    /*Section Sobre*/
+    #infoBlock h2 {
+        font-size: 2.4em;
+    }
+
+    #gymtriInfo p {
+        width: auto;
+        color: white;
+        font-size: 1.8em;
+        padding: 0 1em;
+    }
+
+    /*Section Serviços oferecidos*/
+
+    #offer {
+        height: 1250px;
+    }
+    #offerGrid {
+        padding: 2% 8% 0;
+        width: auto;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: auto;
+    }
+
+    .imgItem img {
+        max-width: 100%;
+        max-height: 100%;
+        background-size: contain;
+        object-fit: cover;
+    }
+
+    .textItem h3 {
+        font-size: 2.8em;
+    }
+
+    .textItem {
+        font-size: 1.4em;
+        width: 100%;
+    }
+
+    #offer320px {
+        display: none;
+    }
+
+    .show {
+        opacity: 1;
+        transition: all 1s;
+        filter: blur(0);
+        transform: translateX(0);
+    }
+
+    /*Section vantagens*/
+
+    #blockAdvantage320px {
+        display: none;
+    }
+
+    #blockAdvantage {
+        display: block;
+    }
+
+    #blockAdvantage h2 {
+        font-size: 3em;
+        margin-bottom: 1.3em;
+    }
+    
+    #blockImg img {
+        width: 95px;
+    }
+
+    .blockAdv {
+        margin: 0 1em 4em;
+        padding: 1em;
+        width: 300px;
+        height: 350px;
+    }
+
+    .titleAdv {
+        font-size: 2.2em;
+    }
+
+    .blockAdv p {
+        font-size: 1.6em;
+    }
+
+    /*Section Planos*/
+
+    #blockValue {
+        padding-bottom: 10%;
+    }
+
+    .titleContainer h2 {
+        font-size: 3em;
+        padding: 1em;
+    }
+
+    .valueContainer {
+        height: 950px;
+        width: 300px;
+    }
+
+    #freeText {
+        font-size: 2.2em;
+    }
+
+    .textPlans li{
+        font-size: 1.6em;
+    }
+
+    .valueContainer h4 {
+        font-size: 2.4em;
+    }
+
+    .valuePlans {
+        font-size: 2.8em;
+    }
+
+    #blockValue p {
+        font-size: 1.4em;
+    }
+
+    #btnPlans button {
+        font-size: 2em;
+    }
+
+    /*Footer*/
+
+    footer {
+        height: auto;
+    }
+
+    #footerImg img {
+        margin: 0 auto;
+        width: 20%;
+    }
+
+    footer hr {
+        border-color: white;
+        margin: 1em 4em;
+    }
+
+    #footerInfos {
+        display: flex;
+    }
+
+    .blockFooter {
+        margin: 3em 1em;
+        width: 80%;
+    }
+
+    .blockFooter h3 {
+        font-size: 2em;
+        text-align: center;
+        margin-bottom: 1em;
+    }
+
+    .blockFooter li {
+        display: block;
+        text-align: center;
+        margin-bottom: 0.8em;
+    }
+
+    .blockFooter li a {
+        color: #FFFFFF;
+        text-decoration: none;
+        font-size: 1.4em;
+    }
+
+    .blockFooter ul li img {
+        width: 10%;
+        display: block;
+        margin: 0.5em auto 0
+    }
+}
+
+
+
