@@ -1,14 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Playwrite+NO:wght@100..400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Contrail+One&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
 }
 
-body {
-    font-family: Arial, sans-serif;
-    background-color: #E0E0E0; 
-    color: #fff; 
-}
+
 
 
 header {
@@ -16,10 +17,10 @@ header {
     align-items: center;
     flex-direction: row;
     justify-content: space-between;
-    margin: 0 2em 2em;
     width: 100%;
     position: relative;
     z-index: 10;
+    background-color: #00BFAE;
 }
 
 header img {
@@ -36,13 +37,12 @@ header img {
 }
 
 header img {
-    width: 110px;
+    width: 80px;
 }
 
 nav {
-    font-family: "Montserrat", sans-serif;
     width: 100%;
-    padding: 1em 0;
+    padding: 0.2em 0;
     margin-right: 15px;
 }
 
@@ -50,8 +50,12 @@ nav {
     text-decoration: none;
     font-size: 20px;
     font-weight: 500;
-    color: #00bfae;
+    letter-spacing: 1px;
+    color: white;
     transition: 0.3s;
+    text-align: center;
+    display: flex;
+    padding: 1.4em 2em;
 }
 
 nav ul {
@@ -70,63 +74,21 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #00bfae;
+    color: #ffffff;
     padding: 1.4em 2em;
     display: flex;
     font-size: 20px;
     text-align: center;
 }
 
-nav ul li a:hover {
-    color: white;
-    font-size: 17px;
-    transition: 0.3s;
-}
-
-/* Estilo do Submenu */
-.subMenu {
-    display: none;
-    position: absolute;
-    background-color: #252423;
-    border: 1px solid #00bfae;
-    min-width: 120px;
-    width: 100%;
-    top: 100%;
-    left: 0;
-}
-
-nav ul li:hover .subMenu {
-    display: block;
-}
-
-.subMenu li {
-    float: none;
-}
-
-.subMenu a {
-    padding: 1.3em 0.8em;
-    text-align: center;
-    font-size: 16px;
-}
-
-.hrMenu {
-    border-color: #00bfae;
-}
-
-
-.navConfig {
-    text-decoration: none;
-    font-family: "Montserrat", sans-serif;
-    font-size: 20px;
-    font-weight: 500;
-    color: #00bfae;
-    transition: 0.3s;
-}
-
 .navConfig:hover {
-    color: white;
+    color: #607D8B;
     transition: 0.3s;
-    font-size: 22px;
+}
+
+body {
+    background-color: #E0E0E0; 
+    color: #fff; 
 }
 
 /* Estilo da grade de produtos */
