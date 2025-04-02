@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Novo agendamento</title>
+    <link rel="stylesheet" href="/public/css/styleInterface.css">
+</head>
+<body>
+    <header>
+        <a href="/views/pages/interfaces/interfaceUsuario.html"><img src="/public/img/logoPng3.png" alt="Logo Gymtri" width="80px"></a>
+        <nav id="menu">
+            <ul>
+                <li><a href="/views/pages/Aluno/buscarProfissional.html" class="navConfig">Buscar Profissional</a></li>
+                <li><a href="/views/pages/Aluno/buscarAcademia.html" class="navConfig">Buscar Academias</a></li>
+                <li><a href="/views/pages/Produtos/indexprodutos.html" class="navConfig" target="_blank">Produtos</a></li>
+                <li><a href="/views/pages/Aluno/editarDados.html" class="navConfig">Editar Dados</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <form>
+            <section>
+                <label class="labelAgend" for="reason">Motivo</label>
+                <input type="text" name="reason" id="reason" placeholder="Descreva resumidamente o motivo da consulta">
+            </section>
+            <section>
+                <label class="labelAgend" for="area">Especialidade</label>
+                <select name="area" id="area">
+                    <option id="null1" value="null">Selecione a especialidade</option>
+                    <option value="Nutricionista">Nutricionista</option>
+                    <option value="Personal Trainer">Personal Trainer</option>
+                </select>
+            </section>
+            <section>
+                <label class="labelAgend" for="professional">Profissional </label>
+                <select name="professional" id="professional" aria-placeholder="Escolha o profissional">
+                    <option id="null2" value="null">Selecione o profissional</option>
+                    <option value="Dr. Fulano de Tal da Silva"> Dr. Fulano de Tal da Silva</option>
+                    <option value="Dra. Ciclana de Tal Gomes">Dra. Ciclana de Tal Gomes</option>
+                </select>
+            </section>
+            <section>
+                <label class="labelAgend" for="date">Data</label>
+                <input type="date" name="date" id="date">
+            </section>
+            <section>
+                <label class="labelAgend" for="hours">Horário</label>
+                <input type="time" name="" id="">
+            </section>
+            <section class="btnAgend">
+                <button class="btnConfig">Confirmar agendamento</button>
+            </section>
+        </form>
+    </main>
+<body>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar dados</title>
+    <link rel="stylesheet" href="/public/css/pag_profissio.css">
+</head>
+<body>
+    <header>
+        <a href="/views/pages/interfaces/interfaceProfissional.html"><img src="/public/img/logoPng3.png" alt="Logo Gymtri" width="80px"></a>
+        <nav id="menu">
+            <ul>
+                <li><a href="buscarAluno.html" class="navConfig">Buscar aluno</a></li>
+                <li><a href="atividadeCriada.html" class="navConfig">Atividades</a></li>
+                <li><a href="relatorioCriado.html" class="navConfig">Relatórios</a></li>
+                <li><a href="editarDados.html" class="navConfig">Editar dados</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <h2>Configure seu Perfil Profissional</h2>
+    
+            <!-- Visualização e edição do perfil -->
+            <div class="profile-pic-container">
+                <img id="profile-pic" src="https://via.placeholder.com/100" alt="Foto de Perfil">
+                <input type="file" id="file-input" accept="image/*" onchange="previewImage(event)">
+            </div>
+    
+            <div class="form-group">
+                <label for="username">Nome </label>
+                <input type="text" id="username" placeholder="Digite seu nome" required>
+            </div>
+    
+            <div class="form-group">
+                <label for="especialidade">Especialidade</label>
+                <input type="text" id="especialidade" placeholder="Digite a especialidade" required>
+            </div>
+
+            <div class="form-group">
+                <label for="contatos">Contatos</label>
+                <input type="text" id="contatos" placeholder="Digite os contatos" required>
+            </div>
+    
+            <div class="form-group">
+                <label for="expe">Experiência</label>
+                <textarea id="text" placeholder="Digite sua experiêcia" rows="3"></textarea>
+            </div>
+    
+            <button onclick="saveProfile()">Salvar Alterações</button>
+        </div>
+
+    </main>
+
+    <script src="/public/js/pag_profissio.js"></script>
+
+</body>
+</html>

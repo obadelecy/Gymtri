@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pendências</title>
+    <link rel="stylesheet" href="/public/css/styleInterface.css">
+</head>
+<body>
+    <header>
+        <a href="/views/pages/interfaces/interfaceAcademia.html"><img src="/public/img/logoPng3.png" alt="Logo Gymtri" width="80px"></a>
+        <nav id="menu">
+            <ul>
+                <li><a href="buscarProfissional.html" class="navConfig">Profissionais</a></li>
+                <li><a href="gerarAula.html" class="navConfig">Gerar aula</a></li>
+                <li><a href="/views/pages/Produtos/indexprodutos.html" class="navConfig" target="_blank">Produtos</a></li>
+                <li><a href="editarDados.html" class="navConfig">Editar dados</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main>
+        <section class="title">
+            <h1>Verificar pendencias</h1>
+        </section>
+
+        <form>
+            <section id="pendingBlock">
+                <section>
+                    <label id="labelPending" for="search">Digite o nome ou CPF do aluno</label>
+                    <input type="text" name="search" id="search" placeholder="Nome ou CPF do aluno">
+                    <button id="btnPending">Buscar aluno</button>
+                </section>
+            </section>
+            
+        </form>
+
+        <section id="blockConsultUser" class="consult">
+            <section id="item1" class="itemConsult">
+                <h4>Aluno</h4>
+                <p><span>Nome(a):</span> Josué José Pontes</p>
+                <p><span>Plano:</span> Pro</p>
+                <p><span>Situação:</span> Pago</p>
+                <p><span>Pendências:</span> Ficha médica</p>
+                <p><span>Data:</span> 29/11/2024</p>
+                <p><span>Horário:</span> 21:30</p>
+
+                <section id="btnConsult">
+                    <button class="btnConfig">Visualizar perfil</button>
+                    <button class="btnConfig" type="button">Editar</button>
+                </section>
+            </section>
+            <section id="item2" class="itemConsult">
+                <h4>Visitante</h4>
+                <p><span class="spanProf">Nome(a):</span> Carlos Bardos Marlos</p>
+                <p><span>Plano:</span> Básico</p>
+                <p><span>Situação:</span> Pendente</p>
+                <p><span>Pendências:</span> Cópia dos documentos</p>
+                <p><span>Data:</span> 30/11/2024</p>
+                <p><span>Horário:</span> 16:26</p>
+                <section id="btnConsult">
+                    <button class="btnConfig">Visualizar perfil</button>
+                    <button class="btnConfig" type="button">Editar</button>
+
+                </section>
+            </section>
+            <section id="item3" class="notConsult">
+                <h4>Não há mais agendamentos.</h4>
+            </section>    
+        </section>
+    </main>
+  
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meus relatórios</title>
+    <link rel="stylesheet" href="/public/css/styleInterface.css">
+</head>
+<body>
+    <header>
+        <a href="/views/pages/interfaces/interfaceUsuario.html"><img src="/public/img/logoPng3.png" alt="Logo Gymtri" width="80px"></a>
+        <nav id="menu">
+            <ul>
+                <li><a href="/views/pages/Aluno/buscarProfissional.html" class="navConfig">Buscar Profissional</a></li>
+                <li><a href="/views/pages/Aluno/buscarAcademia.html" class="navConfig">Buscar Academias</a></li>
+                <li><a href="/views/pages/Produtos/indexprodutos.html" class="navConfig" target="_blank">Produtos</a></li>
+                <li><a href="/views/pages/Aluno/editarDados.html" class="navConfig">Editar Dados</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="title">
+            <h1>Consulte seus relatórios</h1>
+        </section>
+
+        <section id="blockReporttUser" class="consult">
+            <section id="report1" class="itemConsult">
+                <h4>Indicação de produtos e pontos a melhorar</h4>
+                <p><span>Profissional:</span> Dr. Fulano de Tal da Silva</p>
+                <p><span>Data:</span> 20/11/2024</p>
+                <p><span>Horário:</span> 09:55</p>
+                <section id="btnConsult">
+                    <button class="btnConfig" type="button">Visualizar</button>
+                    <button class="btnConfig" type="button">Remover</button>
+                </section>
+            </section>
+            <section id="report2" class="itemConsult">
+                <h4>Dieta atualizada</h4>
+                <p><span class="spanProf">Profissional:</span> Dra. Ciclana de Tal Gomes</p>
+                <p><span>Data:</span> 25/11/2024</p>
+                <p><span>Horário:</span> 15:00</p>
+                <section id="btnConsult">
+                    <button class="btnConfig" type="button">Visualizar</button>
+                    <button class="btnConfig" type="button">Remover</button>
+                </section>
+            </section>
+            <section id="item3" class="notConsult">
+                <h4>Não há mais relatórios.</h4>
+                <section id="btnAgendar">
+                    <a href="novoAgendamento.html"><button class="btnConfig">Novo agendamento</button></a>
+                </section>
+            </section>
+        </section>
+    </main>
+  
+</body>
+</html>
