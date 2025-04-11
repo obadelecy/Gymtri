@@ -32,14 +32,14 @@ nav {
 
 .navConfig {
     text-decoration: none;
-    font-size: 20px;
+    font-size: 1em;
     font-weight: 500;
     letter-spacing: 1px;
-    color: white;
+    color: #ffffff;
     transition: 0.3s;
     text-align: center;
     display: flex;
-    padding: 1.4em 2em;
+    padding: 1em 1em;
 }
 
 .navConfig:hover {
@@ -54,17 +54,48 @@ nav ul {
     align-items: center;
     flex-wrap: wrap;
     list-style-type: none;
-    margin-right: 5em;
+    margin-right: 1em;
 }
 
 .hrMenu {
     border-color: #FFFFFF;
 }
 
+#menu2 {
+    width: 55%;
+}
+
+#menu2 ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: right;
+}
+
+#menu2 ul li{
+    width: 35%;
+}
+
+#menu2 ul li a{
+    display: block;
+}
+
+#linkRegister {
+    background-color: #607D8B;
+    color: #ffffff;
+    border-radius: 1em;
+}
+
+#linkRegister:hover{
+    background-color: #FFFFFF;
+    color: #607D8B;
+}
+
 body {
     overflow-x: hidden;
 }
 
+/*Section Inicio da página (Apresentação)*/
 
 #presentation {
     background-color: #E0E0E0;
@@ -92,15 +123,43 @@ body {
     text-align: center;
 }
 
+/*Section Sobre*/
+
+#gymtriInfo {
+    background-color: #00BFAE;
+    padding-bottom: 4em;
+}
+
+#infoBlock h2 {
+    color: #FFFFFF;
+}
+
+#gymtriInfo p {
+    width: auto;
+    color: white;
+    font-size: 1.3em;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0em 1em 1em;
+}
+
+/*Serviços oferecidos*/
+
 #offer {
     background-color: #E0E0E0;
-    padding: 6%;
-    width: auto;
-    height: 1600px;
+    padding: 4%;
+    height: auto;
 }
 
 #offer320px {
     display: none;
+}
+
+.blockOffer{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width: auto;
+    margin-bottom: 4em;
 }
 
 .titleContainer h2 {
@@ -111,18 +170,11 @@ body {
     margin-bottom: 1.3em;
 }
 
-#offerGrid {
-    padding: 0 5% 0;
-    width: auto;
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: auto;
-    gap: 10%;
-}
-
 .imgItem img {
     width: 100%;
+    max-width: 90%;
     border-radius: 5%;
+    margin: 1em;
 }
 
 .textItem h3 {
@@ -134,12 +186,16 @@ body {
 .textItem {
     color: #00BFAE;
     text-align: left;
-    font-size: 1.4em;
+    font-size: 1.2em;
     padding-top: 2%;
     opacity: 0;
     filter: blur(10px);
     transition: all 1s;
     transform: translateX(-100%);
+}
+
+.textItem p {
+    width: auto;
 }
 
 .show {
@@ -149,6 +205,68 @@ body {
     transform: translateX(0);
 }
 
+ /*Section vantagens*/
+
+ #blockAdvantage320px {
+    display: none;
+}
+
+#blockAdvantage {
+    background-color: #00BFAE;
+    padding-bottom: 4em;
+}
+
+#blockAdvantage h2 {
+    color: #FFFFFF;
+    text-align: center;
+    padding-top: 1em;
+    font-size: 38px;
+    margin-bottom: 1.3em;
+}
+
+#blockImg {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 1em;
+}
+
+#blockImg img {
+    width: 70px;
+}
+
+#descripBlock {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.blockAdv {
+    width: 250px;
+    height: auto;
+    padding: 0.5em;
+    border: 2px solid #FFFFFF;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-bottom: 1em;
+}
+
+.titleAdv {
+    text-align: center;
+    margin-bottom: 0.8em;
+    color: #FFFFFF;
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+.blockAdv p {
+    color: #FFFFFF;
+    font-size: 1.3em;
+}
+
+/*Section Planos*/
 
 #plansValueContainer {
     background-color: #E0E0E0;
@@ -182,7 +300,6 @@ body {
 
 #free {
     color: #FFFFFF;
-
 }
 
 #freeText {
@@ -247,125 +364,8 @@ body {
     cursor: pointer;
 }
 
-#blockAdvantage320px {
-    display: none;
-}
 
-#blockAdvantage {
-    background-color: #00BFAE;
-    padding-bottom: 4em;
-}
-
-#blockAdvantage h2 {
-    color: #FFFFFF;
-    text-align: center;
-    padding-top: 1em;
-    font-size: 38px;
-    margin-bottom: 1.3em;
-}
-
-#blockImg {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin-bottom: 1em;
-}
-
-#blockImg img {
-    width: 70px;
-}
-
-#descripBlock {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-
-.blockAdv {
-    width: 250px;
-    height: auto;
-    padding: 0.5em;
-    border: 2px solid #FFFFFF;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    margin-bottom: 1em;
-}
-
-.titleAdv {
-    text-align: center;
-    margin-bottom: 0.8em;
-    color: #FFFFFF;
-    font-size: 1.2em;
-    font-weight: 600;
-}
-
-.blockAdv p {
-    color: #FFFFFF;
-    font-size: 1.3em;
-}
-
-#gymtriInfo {
-    background-color: #00BFAE;
-    padding-bottom: 4em;
-}
-
-#infoBlock h2 {
-    color: #FFFFFF;
-}
-
-#gymtriInfo p {
-    width: 650px;
-    color: white;
-    font-size: 1.3em;
-    text-align: center;
-    margin: 0 auto;
-    padding-bottom: 1em;
-}
-
-#mapContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #ffffff;
-}
-
-#searchCEP {
-    padding-bottom: 3em;
-}
-
-#cep {
-    padding: 1em;
-    border-radius: 10px;
-    background-color: #FFFFFF;
-    color: #607D8B;
-    font-weight: bold;
-    border: 1px solid #607D8B;
-    text-align: center;
-    font-size: 1em;
-}
-
-#pesquisar {
-    padding: 1em;
-    border-radius: 10px;
-    border: 1px solid #607D8B;
-    background-color: #00BFAE;
-    font-weight: bold;
-    font-size: 1em;
-    color: #FFFFFF;
-}
-
-#pesquisar:hover {
-    cursor: pointer;
-    border: 1px solid white;
-    background-color: #607D8B;
-}
-
-#blockMap {
-    padding-bottom: 2em;
-    margin-bottom: 3em;
-}
+/*Footer*/
 
 footer {
     background-color: #00BFAE;
@@ -429,6 +429,8 @@ footer hr {
     transition: 0.3s;
 }
 
+/*Config menu hamburguer*/
+
 #menuHamburguer {
     display: none;
 }
@@ -448,6 +450,10 @@ footer hr {
     }
 
     #menu {
+        display: none;
+    }
+
+    #menu2{
         display: none;
     }
 
@@ -788,6 +794,10 @@ footer hr {
         display: none;
     }
 
+    #menu2{
+        display: none;
+    }
+
     /* Checkbox invisível */
     #menuHamburguer {
         position: absolute;
@@ -1119,6 +1129,10 @@ footer hr {
     }
 
     #menu {
+        display: none;
+    }
+
+    #menu2{
         display: none;
     }
 
@@ -1454,6 +1468,10 @@ footer hr {
     }
 
     #menu {
+        display: none;
+    }
+
+    #menu2{
         display: none;
     }
 
@@ -1815,8 +1833,8 @@ footer hr {
     }
     
     .navConfig {
-        font-size: 1em;
-        padding: 1.4em 1.6em;
+        font-size: 0.6em;
+        padding: 1.4em 0.2em;
     }
     
     nav ul {
@@ -1860,50 +1878,10 @@ footer hr {
 
     /*Section Serviços oferecidos*/
 
-    #offer {
-        display: block;
-        height: auto;
-        padding: 2%;
-    }
-
-    #offerGrid {
-        padding: 2% 8% 0;
-        width: auto;
-        display: grid;
-        grid-template-columns: 50% 50%;
-        grid-template-rows: auto;
-    }
-
-    .titleContainer h2 {
-        font-size: 1em;
-        margin-bottom: 1.3em;
-    }
-
-    .imgItem img {
-        max-width: 100%;
-        max-height: 100%;
-        background-size: contain;
-        object-fit: cover;
-    }
-
     .textItem h3 {
         font-size: 1.8em;
     }
 
-    .textItem {
-        font-size: 1em;
-    }
-
-    #offer320px {
-        display: none;
-    }
-
-    .show {
-        opacity: 1;
-        transition: all 1s;
-        filter: blur(0);
-        transform: translateX(0);
-    }
 
     /*Section vantagens*/
 
@@ -2052,8 +2030,8 @@ footer hr {
     }
     
     .navConfig {
-        font-size: 1em;
-        padding: 1.4em 1.6em;
+        font-size: 0.9em;
+        padding: 1.4em 0.4em;
     }
     
     nav ul {
@@ -2080,7 +2058,7 @@ footer hr {
 
     #text1 {
         font-size: 2.2em;
-        padding: 0em 0.8em 1em;
+        padding: 2em 0.8em 1em;
     }
 
     /*Section Sobre*/
@@ -2097,49 +2075,10 @@ footer hr {
 
     /*Section Serviços oferecidos*/
 
-    #offer {
-        display: block;
-        height: auto;
-        padding: 2%; 
-    }
-
-    #offerGrid {
-        padding: 2% 8% 0;
-        width: auto;
-        display: grid;
-        grid-template-columns: 50% 50%;
-        grid-template-rows: auto;
-    }
-
-    .titleContainer h2 {
-        font-size: 1em;
-        margin-bottom: 1.3em;
-    }
-
-    .imgItem img {
-        max-width: 100%;
-        max-height: 100%;
-        background-size: contain;
-        object-fit: cover;
-    }
-
     .textItem h3 {
-        font-size: 1.8em;
-    }
-
-    .textItem {
-        font-size: 1em;
-    }
-
-    #offer320px {
-        display: none;
-    }
-
-    .show {
-        opacity: 1;
-        transition: all 1s;
-        filter: blur(0);
-        transform: translateX(0);
+        color: #00BFAE;
+        font-size: 2em;
+        margin-bottom: 5%;
     }
 
     /*Section vantagens*/
@@ -2290,7 +2229,7 @@ footer hr {
     
     .navConfig {
         font-size: 1em;
-        padding: 1.4em 1.6em;
+        padding: 1.4em 0.4em;
     }
     
     nav ul {
@@ -2316,8 +2255,8 @@ footer hr {
     }
 
     #text1 {
-        font-size: 2.2em;
-        padding: 0em 0.8em 1em;
+        font-size: 2.5em;
+        padding: 1.5em 0.8em 1em;
     }
 
     /*Section Sobre*/
@@ -2334,45 +2273,8 @@ footer hr {
 
     /*Section Serviços oferecidos*/
 
-    #offer {
-        display: block;
-        height: 1100px;
-        padding: 2%;
-    }
-
-    #offerGrid {
-        padding: 2% 8% 0;
-        width: auto;
-        display: grid;
-        grid-template-columns: 50% 50%;
-        grid-template-rows: auto;
-    }
-
-    .imgItem img {
-        max-width: 100%;
-        max-height: 100%;
-        background-size: contain;
-        object-fit: cover;
-    }
-
     .textItem h3 {
-        font-size: 2.6em;
-    }
-
-    .textItem {
-        font-size: 1.2em;
-        width: 100%;
-    }
-
-    #offer320px {
-        display: none;
-    }
-
-    .show {
-        opacity: 1;
-        transition: all 1s;
-        filter: blur(0);
-        transform: translateX(0);
+        font-size: 2.4em;
     }
 
     /*Section vantagens*/
@@ -2500,14 +2402,6 @@ footer hr {
     }
 }
 
-@media (min-width: 1185px) and (max-width: 1380px) {
-    #offer {
-        display: block;
-        height: 1500px;
-        padding: 2%;
-    }
-}
-
 @media (min-width: 1440px) and (max-width: 4000px) {
     * {
         overflow-x: hidden;
@@ -2530,8 +2424,8 @@ footer hr {
     }
     
     .navConfig {
-        font-size: 1.4em;
-        padding: 1.4em 1.6em;
+        font-size: 1.2em;
+        padding: 1.4em 0.5em;
     }
     
     nav ul {
@@ -2575,42 +2469,9 @@ footer hr {
 
     /*Section Serviços oferecidos*/
 
-    #offer {
-        height: 1250px;
-    }
-    #offerGrid {
-        padding: 2% 8% 0;
-        width: auto;
-        display: grid;
-        grid-template-columns: 50% 50%;
-        grid-template-rows: auto;
-    }
-
-    .imgItem img {
-        max-width: 100%;
-        max-height: 100%;
-        background-size: contain;
-        object-fit: cover;
-    }
-
-    .textItem h3 {
-        font-size: 2.8em;
-    }
-
     .textItem {
         font-size: 1.4em;
         width: 100%;
-    }
-
-    #offer320px {
-        display: none;
-    }
-
-    .show {
-        opacity: 1;
-        transition: all 1s;
-        filter: blur(0);
-        transform: translateX(0);
     }
 
     /*Section vantagens*/
@@ -2736,6 +2597,3 @@ footer hr {
         margin: 0.5em auto 0
     }
 }
-
-
-

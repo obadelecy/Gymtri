@@ -30,19 +30,19 @@ nav {
     margin-right: 15px;
 }
 
-.navConfig{
+.navConfig {
     text-decoration: none;
-    font-size: 20px;
+    font-size: 1em;
     font-weight: 500;
     letter-spacing: 1px;
     color: #ffffff;
     transition: 0.3s;
     text-align: center;
     display: flex;
-    padding: 1.4em 2em;
+    padding: 1em 1em;
 }
 
-.navConfig:hover{
+.navConfig:hover {
     color: #607D8B;
     transition: 0.3s;
 }
@@ -54,7 +54,41 @@ nav ul {
     align-items: center;
     flex-wrap: wrap;
     list-style-type: none;
-    margin-right: 5em;
+    margin-right: 1em;
+}
+
+.hrMenu {
+    border-color: #FFFFFF;
+}
+
+#menu2 {
+    width: 55%;
+}
+
+#menu2 ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: right;
+}
+
+#menu2 ul li{
+    width: 35%;
+}
+
+#menu2 ul li a{
+    display: block;
+}
+
+#linkRegister {
+    background-color: #607D8B;
+    color: #ffffff;
+    border-radius: 1em;
+}
+
+#linkRegister:hover{
+    background-color: #FFFFFF;
+    color: #607D8B;
 }
 
 body {
