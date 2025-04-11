@@ -9,9 +9,6 @@
     font-family: "Montserrat", sans-serif;
 }
 
-
-
-
 header {
     display: flex;
     align-items: center;
@@ -48,14 +45,19 @@ nav {
 
 .navConfig {
     text-decoration: none;
-    font-size: 20px;
+    font-size: 1em;
     font-weight: 500;
     letter-spacing: 1px;
-    color: white;
+    color: #ffffff;
     transition: 0.3s;
     text-align: center;
     display: flex;
-    padding: 1.4em 2em;
+    padding: 1em 1em;
+}
+
+.navConfig:hover {
+    color: #607D8B;
+    transition: 0.3s;
 }
 
 nav ul {
@@ -65,25 +67,41 @@ nav ul {
     align-items: center;
     flex-wrap: wrap;
     list-style-type: none;
-    margin-right: 5em;
+    margin-right: 1em;
 }
 
-nav ul li {
-    position: relative;
+.hrMenu {
+    border-color: #FFFFFF;
 }
 
-nav ul li a {
-    text-decoration: none;
-    color: #ffffff;
-    padding: 1.4em 2em;
+#menu2 {
+    width: 55%;
+}
+
+#menu2 ul {
     display: flex;
-    font-size: 20px;
-    text-align: center;
+    flex-direction: row;
+    align-items: center;
+    justify-content: right;
 }
 
-.navConfig:hover {
+#menu2 ul li{
+    width: 35%;
+}
+
+#menu2 ul li a{
+    display: block;
+}
+
+#linkRegister {
+    background-color: #607D8B;
+    color: #ffffff;
+    border-radius: 1em;
+}
+
+#linkRegister:hover{
+    background-color: #FFFFFF;
     color: #607D8B;
-    transition: 0.3s;
 }
 
 body {
