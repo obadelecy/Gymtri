@@ -2402,7 +2402,7 @@ footer hr {
     }
 }
 
-@media (min-width: 1440px) and (max-width: 4000px) {
+@media (min-width: 1440px) and (max-width: 1700px) {
     * {
         overflow-x: hidden;
     }
@@ -2592,8 +2592,515 @@ footer hr {
     }
 
     .blockFooter ul li img {
-        width: 10%;
+        width: 4%;
+    }
+}
+
+@media (min-width: 1700px) and (max-width: 2100px) {
+    * {
+        overflow-x: hidden;
+    }
+
+    header {
+        padding: 5px;
+    }
+
+    header img {
+        width: 90px;
+    }
+
+    #menu {
         display: block;
-        margin: 0.5em auto 0
+    }
+
+    nav {
+        margin-right: 5px;
+    }
+    
+    .navConfig {
+        font-size: 1.6em;
+        padding: 1.4em 0.5em;
+    }
+    
+    nav ul {
+        margin-right: 1em;
+    }
+    
+    /*Section Inicio da página (Apresentação)*/
+    #presentation {
+        padding: 10% 4%;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: auto;
+    }
+
+    #presentation section {
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    }
+
+    #imgPresentation img {
+        display: block;
+        max-width: 100%;
+    }
+
+    #text1 {
+        font-size: 3.4em;
+        padding: 2em 0.8em 1em;
+    }
+
+    /*Section Sobre*/
+    #infoBlock h2 {
+        font-size: 2.4em;
+    }
+
+    #gymtriInfo p {
+        width: auto;
+        color: white;
+        font-size: 1.8em;
+        padding: 0 1em;
+    }
+
+    /*Section Serviços oferecidos*/
+
+    .textItem {
+        font-size: 1.4em;
+        width: 100%;
+    }
+
+    /*Section vantagens*/
+
+    #blockAdvantage320px {
+        display: none;
+    }
+
+    #blockAdvantage {
+        display: block;
+    }
+
+    #blockAdvantage h2 {
+        font-size: 3em;
+        margin-bottom: 1.3em;
+    }
+    
+    #blockImg img {
+        width: 95px;
+    }
+
+    .blockAdv {
+        margin: 0 1em 4em;
+        padding: 1em;
+        width: 300px;
+        height: 350px;
+    }
+
+    .titleAdv {
+        font-size: 2.2em;
+    }
+
+    .blockAdv p {
+        font-size: 1.6em;
+    }
+
+    /*Section Planos*/
+
+    #blockValue {
+        padding-bottom: 10%;
+    }
+
+    .titleContainer h2 {
+        font-size: 3em;
+        padding: 1em;
+    }
+
+    .valueContainer {
+        height: 950px;
+        width: 300px;
+    }
+
+    #freeText {
+        font-size: 2.2em;
+    }
+
+    .textPlans li{
+        font-size: 1.6em;
+    }
+
+    .valueContainer h4 {
+        font-size: 2.4em;
+    }
+
+    .valuePlans {
+        font-size: 2.8em;
+    }
+
+    #blockValue p {
+        font-size: 1.4em;
+    }
+
+    #btnPlans button {
+        font-size: 2em;
+    }
+
+    /*Footer*/
+
+    footer {
+        height: auto;
+    }
+
+    #footerImg img {
+        margin: 0 auto;
+        width: 20%;
+    }
+
+    footer hr {
+        border-color: white;
+        margin: 1em 4em;
+    }
+
+    #footerInfos {
+        display: flex;
+    }
+
+    .blockFooter {
+        margin: 3em 1em;
+        width: 80%;
+    }
+
+    .blockFooter h3 {
+        font-size: 2em;
+        text-align: center;
+        margin-bottom: 1em;
+    }
+
+    .blockFooter li {
+        display: block;
+        text-align: center;
+        margin-bottom: 0.8em;
+    }
+
+    .blockFooter li a {
+        color: #FFFFFF;
+        text-decoration: none;
+        font-size: 1.4em;
+    }
+
+    .blockFooter ul li img {
+        width: 4%;
+    }
+}
+
+@media (min-width: 2100px) and (max-width: 2300px) {
+
+    header img {
+        width: 140px;
+    }
+    
+    .navConfig {
+        font-size: 1.8em;
+        padding: 1.4em 0.5em;
+    }
+    
+    /*Section Inicio da página (Apresentação)*/
+
+    #text1 {
+        font-size: 4.2em;
+        padding: 1.2em 0.8em 1em;
+    }
+
+    /*Section Sobre*/
+    #infoBlock h2 {
+        font-size: 3em;
+    }
+
+    #gymtriInfo p {
+        width: auto;
+        color: white;
+        font-size: 2em;
+        padding: 0 1em;
+    }
+
+    /*Section Serviços oferecidos*/
+
+    .textItem {
+        font-size: 2em;
+        width: 100%;
+    }
+
+    /*Section vantagens*/
+
+    #blockAdvantage h2 {
+        font-size: 3em;
+        margin-bottom: 1.3em;
+    }
+    
+    #blockImg img {
+        width: 140px;
+    }
+
+    .blockAdv {
+        margin: 0 1em 4em;
+        padding: 1em;
+        width: 450px;
+        height: 400px;
+    }
+
+    .titleAdv {
+        font-size: 2.4em;
+    }
+
+    .blockAdv p {
+        font-size: 2em;
+    }
+
+    /*Section Planos*/
+
+    .titleContainer h2 {
+        font-size: 3em;
+        padding: 1em;
+    }
+
+    .valueContainer {
+        height: 950px;
+        width: 430px;
+    }
+
+    #freeText {
+        font-size: 2.4em;
+    }
+
+    .textPlans li{
+        font-size: 1.8em;
+    }
+
+    .valueContainer h4 {
+        font-size: 2.6em;
+    }
+
+    .valuePlans {
+        font-size: 2.8em;
+    }
+
+    #blockValue p {
+        font-size: 1.6em;
+    }
+
+    #btnPlans button {
+        font-size: 3em;
+    }
+
+    /*Footer*/
+
+    #footerImg img {
+        margin: 0 auto;
+        width: 20%;
+    }
+
+    .blockFooter h3 {
+        font-size: 2.2em;
+        text-align: center;
+        margin-bottom: 1em;
+    }
+
+    .blockFooter li {
+        display: block;
+        text-align: center;
+        margin-bottom: 0.8em;
+    }
+
+    .blockFooter li a {
+        color: #FFFFFF;
+        text-decoration: none;
+        font-size: 1.8em;
+    }
+}
+
+@media (min-width: 2300px) and (max-width: 2560px) {
+    * {
+        overflow-x: hidden;
+    }
+
+    header {
+        padding: 5px;
+    }
+
+    header img {
+        width: 140px;
+    }
+
+    #menu {
+        display: block;
+    }
+
+    nav {
+        margin-right: 5px;
+    }
+    
+    .navConfig {
+        font-size: 2em;
+        padding: 1.4em 0.5em;
+    }
+    
+    /*Section Inicio da página (Apresentação)*/
+    #presentation {
+        padding: 10% 4%;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: auto;
+    }
+
+    #presentation section {
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    }
+
+    #imgPresentation img {
+        display: block;
+        max-width: 100%;
+    }
+
+    #text1 {
+        font-size: 4.8em;
+        padding: 2em 0.8em 1em;
+    }
+
+    /*Section Sobre*/
+    #infoBlock h2 {
+        font-size: 3em;
+    }
+
+    #gymtriInfo p {
+        width: auto;
+        color: white;
+        font-size: 2.4em;
+        padding: 0 1em;
+    }
+
+    /*Section Serviços oferecidos*/
+
+    .textItem {
+        font-size: 2.4em;
+        width: 100%;
+    }
+
+    /*Section vantagens*/
+
+    #blockAdvantage320px {
+        display: none;
+    }
+
+    #blockAdvantage {
+        display: block;
+    }
+
+    #blockAdvantage h2 {
+        font-size: 3.2em;
+        margin-bottom: 1.3em;
+    }
+    
+    #blockImg img {
+        width: 140px;
+    }
+
+    .blockAdv {
+        margin: 0 1em 4em;
+        padding: 1em;
+        width: 500px;
+        height: 450px;
+    }
+
+    .titleAdv {
+        font-size: 2.6em;
+    }
+
+    .blockAdv p {
+        font-size: 2.2em;
+    }
+
+    /*Section Planos*/
+
+    #blockValue {
+        padding-bottom: 10%;
+    }
+
+    .titleContainer h2 {
+        font-size: 3.2em;
+        padding: 1em;
+    }
+
+    .valueContainer {
+        height: 1050px;
+        width: 500px;
+    }
+
+    #freeText {
+        font-size: 2.6em;
+    }
+
+    .textPlans li{
+        font-size: 2.2em;
+    }
+
+    .valueContainer h4 {
+        font-size: 2.6em;
+    }
+
+    .valuePlans {
+        font-size: 3em;
+    }
+
+    #blockValue p {
+        font-size: 2em;
+    }
+
+    #btnPlans button {
+        font-size: 3em;
+    }
+
+    /*Footer*/
+
+    footer {
+        height: auto;
+    }
+
+    #footerImg img {
+        margin: 0 auto;
+        width: 20%;
+    }
+
+    footer hr {
+        border-color: white;
+        margin: 1em 4em;
+    }
+
+    #footerInfos {
+        display: flex;
+    }
+
+    .blockFooter {
+        margin: 3em 1em;
+        width: 80%;
+    }
+
+    .blockFooter h3 {
+        font-size: 2.4em;
+        text-align: center;
+        margin-bottom: 1em;
+    }
+
+    .blockFooter li {
+        display: block;
+        text-align: center;
+        margin-bottom: 0.8em;
+    }
+
+    .blockFooter li a {
+        color: #FFFFFF;
+        text-decoration: none;
+        font-size: 2.2em;
+    }
+
+    .blockFooter ul li img {
+        width: 4%;
     }
 }
