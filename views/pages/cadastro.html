@@ -26,6 +26,27 @@
                 <li><a href="login.html" class="navConfig">Entre</a></li>
             </ul>
         </nav>
+
+        <!--Menu Hambúrguer/Checkbox oculto-->
+
+        <input type="checkbox" id="menuHamburguer">
+
+        <!--Icone do menu hambúrguer-->
+        <label for="menuHamburguer" class="menuBtn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+
+        <nav id="menuHamb">
+            <ul>
+                <li> <a href="Produtos/indexprodutos.html" class="navConfig">Produtos</a></li>
+                <li><a href="#plansValueContainer" class="navConfig">Planos</a></li>
+                <li><a href="#blockAdvantage" class="navConfig">Vantagens</a></li>
+                <li><a href="cadastro.html" class="navConfig">Cadastre-se</a></li>
+                <li><a href="login.html" class="navConfig">Entrar</a></li>
+            </ul>
+        </nav>
     </header>
 
     <main>
@@ -33,13 +54,15 @@
             <h1>Escolha como deseja se cadastrar</h1>
         </section>
         <hr>
-        <section id="chooseUserRegister">
-            <section id="blockBtn">
+
+        <section id="blockChoose">
+            <section id="chooseUserRegister">
                 <button class="btnChoose" onclick="showForm('aluno')" type="button">Aluno</button>
                 <button class="btnChoose" onclick="showForm('academia')" type="button">Academia</button>
                 <button class="btnChoose" onclick="showForm('profissional')" type="button">Profissional</button>
             </section>
         </section>
+        
 
         <!--Cadastro Aluno-->
 
@@ -171,7 +194,14 @@
                     <label for="emailAcademyRegister" class="titleLabel">E-mail</label>
                     <br>
                     <input id="emailAcademyRegister" name="emailAcademyRegister" type="email"
-                        placeholder="Digite seu e-mail">
+                        placeholder="Digite o email da academia">
+                </section>
+
+                <section class="sectMargin" id="cellAcademyInput">
+                    <label for="cellAcademyRegister" class="titleLabel">Telefone</label>
+                    <br>
+                    <input id="cellAcademyRegister" name="cellAcademyRegister" type="text"
+                        placeholder="Digite o telefone da academia">
                 </section>
 
                 <br>

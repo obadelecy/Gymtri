@@ -101,13 +101,6 @@ main{
     position: relative; /*Alteração*/
 }
 
-#title {
-    display: flex;
-    flex-direction: row;
-    justify-content: left;
-    width: 70%;
-}
-
 /*h1Title é o estilo dos titulos de cada página (titulo Login ou Escolha como deseja se cadastrar*/
 
 .h1Title {
@@ -139,7 +132,18 @@ form {
 /*Botões de escolha de usuário para cadastro e login*/
 
 #chooseUser{
+    margin: 1em auto 2em;
+}
+
+#chooseUserRegister {
     margin: 1em auto;
+}
+
+#blockChoose{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 #blockBtn {
@@ -166,9 +170,6 @@ form {
     background-color: #607D8B;
 }
 
-#chooseUserRegister {
-    margin: 2em 8.2em;
-}
 
 #registerAluno, #registerAcademia, #registerProfissional {
     display: none;
@@ -331,7 +332,90 @@ select {
     width: 5%;
 }
 
-@media (max-width: 320px){
+/*Config menu hamburguer*/
+
+#menuHamburguer {
+    display: none;
+}
+
+#menuHamb {
+    display: none;
+}
+
+/*Footer*/
+
+footer {
+    background-color: #00BFAE;
+    height: auto;
+}
+
+#footerImg {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#footerImg img {
+    width: 15%;
+    display: flex;
+    margin: 3em 0;
+}
+
+footer hr {
+    border-color: white;
+    margin: 2em 5em;
+}
+
+#footerInfos {
+    background-color: #00BFAE;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.blockFooter {
+    width: 18%;
+    margin: 2em 8em;
+}
+
+.blockFooter h3 {
+    color: #FFFFFF;
+    margin-bottom: 3em;
+}
+
+.blockFooter li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 1.5em;
+}
+
+.blockFooter li a {
+    text-decoration: none;
+    color: white;
+}
+
+.blockFooter ul li img {
+    width: 8%;
+    margin-right: 0.5em;
+}
+
+.blockFooter ul li a:hover {
+    color: #607D8B;
+    transition: 0.3s;
+}
+
+#menuHamburguer {
+    display: none;
+}
+
+#menuHamb {
+    display: none;
+}
+
+
+@media (min-width: 0px) and (max-width: 900px) {
 
     header {
         padding: 0.5em;
@@ -414,5 +498,112 @@ select {
         transform: rotate(-45deg) translate(11px, -11px);
     }
 
-    
+    main {
+        margin: 2em 2em;
+    }
+
+    .h1Title{
+        font-size: 1em;
+    }
+
+    #chooseUser{
+        display: grid;
+        gap: 1em;
+    }
+
+    #chooseUserRegister{
+        display: grid;
+        gap: 1em;
+        /* margin: 1em auto; */
+    }
+
+    #textRegister{
+        font-size: 0.8em;
+    }
+
+    #buttonInput button{
+        font-size: 1em;
+    }
+
+    #buttonInput{
+        justify-content: center;
+    }
+
+    /*Footer*/
+
+    footer{
+        display: grid;
+    }
+
+
+    #footerImg img {
+        width: 50%;
+        display: flex;
+    }
+
+    footer hr {
+        margin: 1em 2em;
+    }
+
+    #footerInfos {
+        display: grid;
+        margin: 0 auto;
+    }
+
+    .blockFooter {
+        margin: 2em auto;
+        width: 80%;
+    }
+
+    .blockFooter h3 {
+        font-size: 1.5em;
+        text-align: center;
+        margin-bottom: 1em;
+    }
+
+    .blockFooter li {
+        display: block;
+        text-align: center;
+        margin-bottom: 0.8em;
+    }
+
+    .blockFooter ul li img {
+        width: 8%;
+        display: block;
+        margin: 0.5em auto 0
+    }
+
+}
+
+@media (min-width: 901px) and (max-width: 1200px) {
+
+    .navConfig {
+        font-size: 0.9em;
+        padding: 1em 0.2em;
+    }
+
+    main {
+        margin: 2em 2em;
+    }
+
+    /*Footer*/
+
+    footer{
+        padding: 2em;
+    }
+
+    #footerImg img {
+        width: 25%;
+        display: flex;
+    }
+
+    #footerInfos{
+        max-width: 100%;
+        padding: 4em;
+    }
+
+    .blockFooter {
+        width: 30%;
+        margin: 2em auto;
+    }
 }

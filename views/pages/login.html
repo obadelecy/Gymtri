@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Aluno</title>
     <link rel="stylesheet" href="/public/css/styleLogin.css">
 </head>
+
 <body>
     <header>
         <a href="index.html"><img src="/public/img/logoPng3.png" alt="Logo Gymtri" width="80px"></a>
@@ -17,33 +19,33 @@
             </ul>
         </nav>
 
-        <nav id="menu2"> 
+        <nav id="menu2">
             <ul>
                 <li><a href="cadastro.html" class="navConfig" id="linkRegister">Cadastre-se</a></li>
                 <li><a href="login.html" class="navConfig">Entre</a></li>
             </ul>
         </nav>
 
-                <!--Menu Hambúrguer/Checkbox oculto-->
+        <!--Menu Hambúrguer/Checkbox oculto-->
 
-                <input type="checkbox" id="menuHamburguer">
+        <input type="checkbox" id="menuHamburguer">
 
-                <!--Icone do menu hambúrguer-->
-                <label for="menuHamburguer" class="menuBtn">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </label>
-        
-                <nav id="menuHamb">
-                    <ul>
-                        <li> <a href="Produtos/indexprodutos.html" class="navConfig">Produtos</a></li>
-                        <li><a href="#plansValueContainer" class="navConfig">Planos</a></li>
-                        <li><a href="#blockAdvantage" class="navConfig">Vantagens</a></li>
-                        <li><a href="cadastro.html" class="navConfig">Cadastre-se</a></li>
-                        <li><a href="login.html" class="navConfig">Entrar</a></li>
-                    </ul>
-                </nav>
+        <!--Icone do menu hambúrguer-->
+        <label for="menuHamburguer" class="menuBtn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+
+        <nav id="menuHamb">
+            <ul>
+                <li> <a href="Produtos/indexprodutos.html" class="navConfig">Produtos</a></li>
+                <li><a href="#plansValueContainer" class="navConfig">Planos</a></li>
+                <li><a href="#blockAdvantage" class="navConfig">Vantagens</a></li>
+                <li><a href="cadastro.html" class="navConfig">Cadastre-se</a></li>
+                <li><a href="login.html" class="navConfig">Entrar</a></li>
+            </ul>
+        </nav>
     </header>
 
     <main>
@@ -60,7 +62,7 @@
             </section>
 
             <input type="hidden" id="userType">
-            
+
             <section id="emailInput">
                 <label for="email" class="titleLabel">E-mail</label>
                 <br>
@@ -81,15 +83,60 @@
             </section>
 
             <br>
-            
+
             <section id="buttonInput">
                 <button type="submit" id="btnConfirm">Continuar</button>
             </section>
         </form>
     </main>
-    
 
+     <!--Rodapé do Site-->
+     <footer>
+
+        <!--Imagem centralizada do rodapé-->
+        <section id="footerImg">
+            <img src="/public/img/logoPng3.png" alt="logo">
+        </section>
+
+        <hr>
+
+        <!--Links e informativos-->
+        <section id="footerInfos">
+            <section class="blockFooter">
+                <h3>Institucional</h3>
+                <ul>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#">Vantagens</a></li>
+                    <li><a href="#">Fale Conosco</a></li>
+                    <li><a href="#">Central de ajuda</a></li>
+                </ul>
+            </section>
+
+            <section class="blockFooter">
+                <h3>Saiba Mais</h3>
+                <ul>
+                    <li><a href="#">Trabalhe Conosco</a></li>
+                    <li><a href="#">Canal de Denúncias</a></li>
+                    <li><a href="#">Divulgue Sua Marca</a></li>
+                </ul>
+            </section>
+
+            <section class="blockFooter">
+                <h3>Entre em contato</h3>
+                <ul>
+                    <li class="linkConfig"><img src="/public/img/instagram2.png" alt="Instagram"><a href="#">@gymtri</a>
+                    </li>
+                    <li class="linkConfig"><img src="/public/img/tik-tok2.png" alt="Tiktok"><a href="#">@gymtri</a></li>
+                    <li><img src="/public/img/o-email2.png" alt="Email"><a href="#">gymtricontato@gmail.com</a></li>
+                    <li><img src="/public/img/telefone2.png" alt="Telefone"><a href="#">(11)99999-9999</a></li>
+                </ul>
+            </section>
+
+        </section>
+    </footer>
+    
     <script src="/public/js/scriptLogin.js"></script>
 
 </body>
+
 </html>
