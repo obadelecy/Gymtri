@@ -21,11 +21,7 @@
     </header>
 
     <main>
-        <form>
-            <section>
-                <label class="labelAgend" for="reason">Motivo</label>
-                <input type="text" name="reason" id="reason" placeholder="Descreva resumidamente o motivo da consulta">
-            </section>
+        <form id="newAgend">
             <section>
                 <label class="labelAgend" for="area">Especialidade</label>
                 <select name="area" id="area">
@@ -49,6 +45,10 @@
             <section>
                 <label class="labelAgend" for="hours">Horário</label>
                 <input type="time" name="" id="">
+            </section>
+            <section>
+                <label class="labelAgend" for="reason">Descreva sobre a consulta</label>
+                <textarea type="text" name="reason" id="reason" placeholder="Descreva resumidamente o motivo da consulta"></textarea>
             </section>
             <section class="btnAgend">
                 <button class="btnConfig">Confirmar agendamento</button>

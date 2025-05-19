@@ -20,7 +20,7 @@
             </ul>
         </nav>
 
-        <nav id="menu2"> 
+        <nav id="menu2">
             <ul>
                 <li><a href="cadastro.html" class="navConfig" id="linkRegister">Cadastre-se</a></li>
                 <li><a href="login.html" class="navConfig">Entrar</a></li>
@@ -62,7 +62,7 @@
                 <button class="btnChoose" onclick="showForm('profissional')" type="button">Profissional</button>
             </section>
         </section>
-        
+
 
         <!--Cadastro Aluno-->
 
@@ -97,6 +97,32 @@
                 </section>
 
                 <br>
+
+                <section class="sectMargin" id="cepInput">
+                    <label for="cep" class="titleLabel">CEP</label>
+                    <input type="text" name="cep" id="cep" placeholder="CEP" class="<%= avisoErro.cep %>" value = '<%= valores.cep %>' onblur="pesquisacep(this.value);" onkeyup="mascaraCEP(event)">
+                </section>
+
+                <br>
+
+                <section class="sectMargin" id="ruaInput">
+                    <label for="rua" class="titleLabel">Rua</label>
+                    <input type="text" name="rua" id="rua" placeholder="Rua" value = '<%= valores.logradouro %>' readonly>
+                </section>
+
+                <br>
+
+                <section class="sectMargin" id="numeroInput">
+                    <label for="numero" class="titleLabel">Número</label>
+                    <input type="text" name="numero" id="numero" placeholder="Número" value = '<%= valores.numero %>' class="<%= avisoErro.numero %>">
+                </section>
+
+                <br>
+
+                <section class="sectMargin" id="complementoInput">
+                    <label for="numero" class="titleLabel">Complemento</label>
+                    <input type="text" name="complemento" id="complemento" placeholder="Complemento" value = '<%= valores.complemento %>' class="<%= avisoErro.numero %>">
+                </section>
 
                 <section class="sectMargin" id="numberAndCpf">
                     <section>
@@ -222,10 +248,30 @@
 
                 <br>
 
-                <section class="sectMargin" id="cepAcademyInput">
-                    <label for="cepAcademyRegister" class="titleLabel">CEP</label>
-                    <input type="text" name="cepAcademyRegister" id="cepAcademyRegister"
-                        placeholder="Digite o CEP (Ex: 00000-000)" maxlength="9">
+                <section class="sectMargin" id="cepInput">
+                    <label for="cepAcad" class="titleLabel">CEP</label>
+                    <input type="text" name="cepAcad" id="cepAcad" placeholder="CEP" class="<%= avisoErro.cep %>" value = '<%= valores.cep %>' onblur="pesquisacep(this.value);" onkeyup="mascaraCEP(event)">
+                </section>
+
+                <br>
+
+                <section class="sectMargin" id="ruaInput">
+                    <label for="ruaAcad" class="titleLabel">Rua</label>
+                    <input type="text" name="ruaAcad" id="ruaAcad" placeholder="Rua" value = '<%= valores.logradouro %>' readonly>
+                </section>
+
+                <br>
+
+                <section class="sectMargin" id="numeroInput">
+                    <label for="numeroAcad" class="titleLabel">Número</label>
+                    <input type="text" name="numeroAcad" id="numeroAcad" placeholder="Número" value = '<%= valores.numero %>' class="<%= avisoErro.numero %>">
+                </section>
+
+                <br>
+
+                <section class="sectMargin" id="complementoInput">
+                    <label for="complementoAcad" class="titleLabel">Complemento</label>
+                    <input type="text" name="complementoAcad" id="complementoAcad" placeholder="Complemento" value = '<%= valores.complemento %>' class="<%= avisoErro.numero %>">
                 </section>
 
                 <section class="sectMargin" id="capacityAcademyInput">

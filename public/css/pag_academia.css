@@ -25,6 +25,10 @@ header a img {
     margin-right: 2em;
 }
 
+#menuHamburguer, #menuHamb{
+    display: none;
+}
+
 nav {
     width: 100%;
     padding: 0.2em 0;
@@ -132,4 +136,99 @@ button:hover {
     max-width: 900px;
     color: #00BFAE;
     font-weight: 500;
+}
+
+@media (max-width: 424px) {
+    header {
+        padding: 0.5em;
+    }
+    
+    #menu{
+        display: none;
+    }
+
+    /* Checkbox invisível */
+    #menuHamburguer {
+        position: absolute;
+        opacity: 0;
+    }
+
+    /* Ícone do Menu Hambúrguer */
+    .menuBtn {
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+        position: relative;
+    }
+
+    .menuBtn span {
+        width: 30px;
+        height: 4px;
+        background-color: #FFFFFF;
+        margin: 5px 0;
+        transition: 0.3s;
+        border-radius: 30px;
+    }
+
+    /* Estilizando o menu */
+    #menuHamb {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 250px;
+        height: 100vh;
+        background-color: #00BFAE;
+        padding-top: 60px;
+        transition: left 0.3s ease-in-out;
+    }
+
+    #menuHamb ul {
+        list-style: none;
+        text-align: center;
+    }
+
+    #menuHamb ul li {
+        padding: 10px 0;
+    }
+
+    #menuHamb ul li a {
+        color: #FFF;
+        text-decoration: none;
+        font-size: 1em;
+    }
+
+    /* O menu será exibido quando o checkbox for marcado */
+    #menuHamburguer:checked+.menuBtn+#menuHamb {
+        left: 0 !important;
+        display: block !important;
+    }
+
+    /* Efeito no ícone do menu */
+    #menuHamburguer:checked+.menuBtn span:nth-child(1) {
+        transform: rotate(45deg) translate(8px, 8px);
+    }
+
+    #menuHamburguer:checked+.menuBtn span:nth-child(2) {
+        opacity: 0;
+    }
+
+    #menuHamburguer:checked+.menuBtn span:nth-child(3) {
+        transform: rotate(-45deg) translate(11px, -11px);
+    }
+
+    .container{
+        width: 80%;
+    }
+
+    input{
+        font-size: 0.8em;
+    }
+
+    select{
+        font-size: 0.8em;
+    }
+
+    textarea{
+        font-size: 0.8em;
+    }
 }

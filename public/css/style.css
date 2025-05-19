@@ -1396,7 +1396,6 @@ footer hr {
     /*Footer*/
 
     footer {
-        background-color: #00BFAE;
         height: auto;
     }
 
@@ -1414,13 +1413,11 @@ footer hr {
     }
 
     footer hr {
-        border-color: white;
         margin: 1em 2em;
     }
 
     #footerInfos {
         display: block;
-        background-color: #00BFAE;
     }
 
     .blockFooter {
@@ -1430,7 +1427,6 @@ footer hr {
 
     .blockFooter h3 {
         font-size: 1.5em;
-        color: #FFFFFF;
         text-align: center;
         margin-bottom: 1em;
     }
@@ -1441,19 +1437,10 @@ footer hr {
         margin-bottom: 0.8em;
     }
 
-    .blockFooter li a {
-        color: #FFFFFF;
-        text-decoration: none;
-    }
-
     .blockFooter ul li img {
         width: 8%;
         display: block;
         margin: 0.5em auto 0
-    }
-
-    .blockFooter ul li a:hover {
-        color: #607D8B;
     }
 
 }
